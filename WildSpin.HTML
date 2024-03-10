@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>WildSpin</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            background-image: url(foto.png);
+        }
+
+        section {  
+            height: 100%;
+            scroll-snap-align: start;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            margin-top: 100%;
+        }
+        .slot {
+            position: absolute;
+            width: 250px;
+            height: 400px;
+            background-color: rgba(202, 202, 202, 0);
+            font-size: 135px;
+            border-radius: 20px;
+        }
+
+        .slot1 { bottom: 15%; left: 40px; }
+        .slot2 { bottom: -25%; left: 40px; }
+        .slot3 { bottom: 15%; left: 240px;}
+        .slot4 { bottom: -25%; left: 240px; }
+        .slot5 { bottom: 15%; left: 430px; }
+        .slot6 { bottom: -25%; left: 430px; }
+        .slot7 { bottom: 15%; left: 615px; }
+        .slot8 { bottom: -25%; left: 615px; }
+
+        #corpo {
+            display: flex;
+            flex-direction: column;
+            
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: cadetblue;
+            align-items: center;
+            background-image: url(foto.png);
+            margin-top: 100%;
+        }
+
+        .sfondo {
+            position: absolute;
+            background-image: url(slot.png);
+            top: 10px;
+            width: 63%;
+            height: 79%;
+            border-radius: 30px;
+            border: 2px solid rgb(46, 46, 46); 
+            background-color: rgb(75, 75, 75);
+            left: 20%;        
+        }
+
+        .immagine {
+            position: absolute;
+            left: -10%;
+            top: 87%;
+            border: 3px #000 solid;
+            border-radius: 10px;
+            width: 245px;
+            height: 90px;
+            z-index: 999;
+        }
+
+
+
+        .button2, .button3, .button4, .button10, .button20, .button50 {
+            width: 128px;
+            height: 128px;
+            border-radius: 27px;
+            position: absolute;
+            top: 102%;
+            font-size: 30px;
+            background-image: url(bottone2b.png);
+            border: 1.5px #000 solid;
+            color: burlywood;
+            
+        }
+        .button10 span, .button20 span, .button4 span, .button50 span, .button3 span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: middle;
+            top: 25%;
+            position: absolute;
+            left: 33%;
+            font-family: sans-serif;
+            
+        }
+        .button2 span{
+            display: inline-block;
+            vertical-align: middle;
+            line-height: middle;
+            top: 25%;
+            position: absolute;
+            left: 20%;
+            font-family: sans-serif;
+        }
+
+        .button2 { left: 2px; }
+        .button3 { left: 12%; } /* Modificato per correggere il posizionamento */
+        .button4 { left: 23.5%; }
+        .button10 { left: 69%; }
+        .button20 { left: 80%; } /* Modificato per correggere il posizionamento */
+        .button50 { left: 91%; } /* Modificato per correggere il posizionamento */
+
+        .button2:hover, .button3:hover, .button4:hover, .button10:hover, .button20:hover, .button50:hover{
+            filter: brightness(0.8);
+        }
+
+        .a_href {
+            width: 150px;
+            height: 80px;
+            background-color: aliceblue;
+            border-radius: 20px;
+            font-size: 30px;
+            left: 15px;
+            position: absolute;
+            top: 15px;
+            border: #000 3px solid;
+        }
+
+        /* Stili per la prima sezione */
+        section:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        section:first-child .sfondo {
+            background-image: url(immagine1.png);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 0;
+            border: none;
+        }
+
+        section:first-child .immagine {
+            display: none;
+        }
+
+        section:first-child .HUGE {
+            color: rgb(255, 251, 0);
+            font-size: 80px;
+            -webkit-text-stroke-width: 0px;
+            -text-stroke-width: 2px #000 solid;
+            margin-bottom: 20px;
+        }
+
+        section:first-child p {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        section:first-child .button {
+            font-size: 32px;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        section {  
+            height: 100%; /* Altezza della sezione, in questo caso, occupa l'intera altezza della viewport */
+            scroll-snap-align: start; /* La sezione si allinea con l'inizio della viewport durante lo scorrimento */
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            margin-top: 100%;
+        }
+
+        #corpo {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: cadetblue;
+            align-items: center;
+            background-image: url(foto.png);
+            
+        }
+
+        .button {
+            width: 245px;
+            height: 145px;
+            border-radius: 32px;
+            position: absolute;
+            top: 100%;
+            background-image: url(bottone.png);
+            border: none;
+            font-size: 40px;
+            color: brown;
+            border: #000 2px solid;
+            left: 41%;
+        }
+
+        .score {
+            position: absolute;
+            font-size: 35px;
+            font-family: fantasy;
+            color: cornsilk;
+            top: 70%;
+            right: 70%;
+            font-size: 26px;
+            font-style: italic;
+            z-index: 999;
+            
+            
+            
+        }
+
+        #corpo_slots {
+            display: flex;
+            position: absolute;
+            background-color: rgba(100, 148, 237, 0);
+            width: 70%;
+            height: 70%;
+            justify-content: center;
+            left: 265px;
+            background-image: url(magia.png);
+            top: 12.5%;
+        }
+
+      
+
+        .HUGE {
+            color: rgb(255, 251, 0);
+            font-size: 250px;
+            position: absolute;
+            left: 20%;
+            -webkit-text-stroke-color: #000;
+            -webkit-text-stroke-width: 3px  ;
+            top: -20%;
+            
+        }
+      
+
+        
+
+
+        .a_href {
+            width: 150px;
+            height: 80px;
+            background-color: aliceblue;
+            border-radius: 20px;
+            font-size: 30px;
+            left: 15px;
+            position: absolute;
+            top: 15px;
+            border: #000 3px solid;
+        }
+        .tutto{           
+            display: flex;
+            flex-direction: column;
+            height: 200%; /* Altezza totale delle due sezioni (100% per ogni sezione) */
+        }
+        #paypal-button-container {
+            position: absolute ;
+            width: 450px;
+            height: 65px;
+            left: 25%;
+            top: 60%;
+           
+        }
+    
+
+
+        .corpo {
+            background-color: rgb(202, 202, 202);
+            position: absolute;
+            width: 1300px;
+            height: 900px;
+            left: 15%;
+            top: 3%;
+            border-radius: 50px;
+            right: 15%;
+            border: 3px solid #000000;
+        }
+ 
+        .wrote {
+            position: absolute;
+            font-size: 80px;
+            color: rgb(35, 57, 58);
+            left: 25%;
+            top: -7%;
+        }
+
+        .things {
+            position: absolute;
+            width: 65%;
+            height: 80%;
+            background-color: rgb(209, 209, 209);
+            right: 17%;
+            top: 12%;
+            border-radius: 35px;
+            border: #000000 solid 2px;
+        }
+
+        .input {
+            width: 280px;
+            height: 50px;
+            border-radius: 15px;
+            position: absolute;
+            left: 57%;
+            top: 15%;
+        }
+        .soto{
+        
+            background-color: gray;
+            height: 100%;
+            position: absolute;
+            top: 50px;
+            left: 15%;
+        }
+        .button:hover{
+            filter: brightness(0.8);
+        }
+        /* Aggiungi questo nel tuo foglio di stile CSS */
+        
+        @keyframes fall {
+            0% {
+            transform: translateY(-100%);
+            }
+            100% {
+            transform: translateY(0);
+            }
+        }
+
+
+        .slot-symbol {
+            animation: fall 0.5s ease-out;
+        }
+        .abcimm{
+            width: 220px;
+            height: 85px;
+            border-radius: 0px;
+
+        }
+        .withdraw_{
+            background-color: rgb(192, 191, 191);
+            height: 80%;
+            position: absolute;
+            top: 1970px;
+            left: 15%;
+            width: 1300px;
+            border: #000 solid 3px;
+            border-radius: 75px;
+        }   
+        #somma{
+            width: 200px;
+            height: 100px;
+        }
+        #a{    
+            width: 70%;
+            height: 80%;
+            position: absolute;
+            right: 15%;
+            background-color: rgb(180, 180, 180) ;
+            border-radius: 20px;
+            font-size: 50px;
+            border: 2px solid  #000;
+        }
+        #email{
+            width: 280px;;
+            height: 45px;
+            position: absolute;
+            top: 150px;
+            left: 460px;
+            border-radius: 15px;
+        }
+        #Amount{
+            width: 280px;;
+            height: 45px;
+            position: absolute;
+            left: 460px;
+            top: 220px;
+            border-radius: 15px;
+        }
+
+        label{
+            position: absolute;
+            left: 28%;
+        }
+        .label{
+            top: 140px;
+        }
+        .label2{
+            top: 210px;
+        }
+        .INVIA{
+            width: 150px;
+            height: 50px;
+            font-size: x-large;
+            position: absolute;
+            right: 320px;
+            top: 50%;
+        }
+
+        #bet{
+            
+            position: absolute;
+            width: 150px;
+            height: 118px;
+            left: 41%;
+            top: -22%;
+            background-image: url(PHOTO/totti.png);
+            border: 2px #000 solid;
+            border-radius: 22%;
+            font-size: 35px;
+            color: rgb(90, 64, 39);
+            font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            z-index: 999;
+        }
+        #STO{
+            width: 35%;
+            height: 7%;
+            background-color: #f0f0f0;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 120%;
+            position: absolute;
+            left: -60%;
+            top: -20%;
+            border-radius: 20%;
+            background-image: url(saldo.png);
+            border: #000 solid 3px;
+            color: rgb(49, 1, 49);
+            
+        }    
+        
+        #overlay {
+            display: none; /* Inizialmente nascosto */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Grigio con opacità del 50% */
+            z-index: 9999; /* Assicura che il div sia sopra a tutti gli altri elementi */
+            pointer-events: none; /* Impedisce l'interazione con il div */
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div id="tutto">
+        
+        <div id="corpo">
+            
+            <div id="corpo_slots" >
+                
+                
+                <div class="sfondo">  
+                    <img src="PHOTO/duuu.png" style="position: absolute; top: -25%; left: 0.7%; z-index: 999;">
+                    <img src="PHOTO/DONNA SLOT.png" style="position:absolute; left: -14%; z-index: 998;">
+                    <div style="background-color: gray;width: 15%; height: 5%;position: absolute; left: -60%; border: #000 2px solid;border-radius: 15%; top: 133%;">
+                        <a href="#vv" style="position: absolute; top: 15%; left: 5%; font-size: 85%; color: #ffcc00; z-index: 999; text-decoration-line: none;">MAKE A DEPOSIT</a>
+                    </div>
+                    <div style="background-color: gray;width: 15%; height: 5%;position: absolute; left: -60%; border: #000 2px solid;border-radius: 15%; top: 140%;">
+                        <a href="#ABB" style="position: absolute; top: 10%; left: 20%; font-size: 100%; color: #ffcc00; z-index: 999; text-decoration-line: none;">Withdraw</a>
+                    </div>
+                    <button onclick="Fa()" style="width: 10%; height: 7% ;position: absolute; left: 150%; top: -18%;font-size: 25px; background-color: #fffd89;"></button>
+                    <div id="STO"></div>
+                    <img src="conto.png" class="immagine">
+                    <div class="slot slot1" id="reel1"></div>
+                    <div class="slot slot2" id="reel2"></div>
+                    <div class="slot slot3" id="reel3"></div>
+                    <div class="slot slot4" id="reel4"></div>
+                    <div class="slot slot5" id="reel5"></div>
+                    <div class="slot slot6" id="reel6"></div>
+                    <div class="slot slot7" id="reel7"></div>
+                    <div class="slot slot8" id="reel8"></div>
+                    <div id="bet"></div>
+
+                    <h1 id="blinkingText" class="HUGE">HUGE WIN!</h1>
+                    <h1 id="Win" class="HUGE">WIN!</h1>
+                </div>
+                <button onclick="spin()" class="button" id="myButton"></button>
+                <button id="bottoneAggiungi1" class="button2" onclick="sce(0.20)"><span> €0.20</span></button>
+                <button id="bottoneAggiungi2" class="button3" onclick="sce(1)"><span>€1</span></button>
+                <button id="bottoneAggiungi3" class="button4" onclick="sce(2)"><span>€2</span></button>
+                <button id="bottoneAggiungi10" class="button10" onclick="sce(5)"><span>€5</span></button>
+                <button id="bottoneAggiungi20" class="button20" onclick="sce(10)"><span>€10</span></button>
+                <button id="bottoneAggiungi50" class="button50" onclick="sce(20)"><span>€20</span></button>
+                <p id="score" class="score"></p>
+               
+            </div>
+        </div>
+        <section>
+            <div class="soto" id="AHAH">
+                
+                <div class="corpo" style="display: flex; top: 100%; background-color: rgb(175, 175, 175);">
+                    <h1 class="wrote" id="vv">MONEY DEPOSIT</h1>
+                    <div class="things">
+                        <div id="paypal-button-container"></div>
+                        <input type="number" placeholder="amount in €..." class="input" id="informazione" step="1" min="0" required></input>
+                        <label for="informazione" style="display: flex; top: 15%; left: 3%;">the amount of money you want<br> to deposit</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="withdraw_">
+                
+                <div>
+                    <center style="font-size: 85px;" id="ABB">Withdraw</center>
+                </div>
+
+                <form id="totale" action="/ricevi-informazioni" method="post">
+                    <div id="a">
+
+
+                        <label for="Amount" class="label2">Amount:</label>
+                        <input type="Amount" id="Amount" name="Amount" required>
+                        <button type="submit" onclick="inviaMessaggio()" class="INVIA" id="gaga">get</button>
+                        <div id="overlay"></div>
+                    </div>
+                </form>
+               
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="CALCOLI.JS"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="server.js"></script>
+
+    <script>
+
+
+function  gabbana(){
+    window.location.href= WildSpin.HTML + "#vv"
+}
+
+
+const a = document.getElementById('Amount');
+const socket = new WebSocket('ws://localhost:8080');
+
+var button = document.getElementById("myButton");
+var ghigo = document.getElementById("gaga");
+
+var urlParams = new URLSearchParams(window.location.search);
+let inputValue = '';
+var myVar = urlParams.get('CRED');
+var amount = document.getElementById('Amount');
+var ae = amount.value;
+
+amount.addEventListener('input', function(event) {
+    inputValue = event.target.value;
+    console.log(inputValue);
+    sessionStorage.setItem('amala', inputValue);
+});
+
+function inviaMessaggio() {
+    if (ae <= abc) {
+        abc -= ae;
+        aggiornaabc(abc);
+        alert('the money are coming to your PayPal!');
+        socket.send(myVar);
+        input = localStorage.getItem('amala');
+        socket.send(inputValue); 
+    } else {
+        alert('insert a valid amount');
+    }           
+}
+
+socket.onerror = function(event) {
+    console.error('Errore di connessione al server:', event);
+    alert('connessione al server fallita');
+    button.disabled = true;
+    
+};
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
