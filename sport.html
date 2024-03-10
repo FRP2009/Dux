@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>SPORT | KingCasinò</title>
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    </head>
+    <style>
+        body{
+            background-color: rgb(172, 172, 172);
+        }
+        #Corpo{
+            height: 100%;
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            background-color: rgb(126, 126, 126);
+            border-radius: 3%;
+            top: 2%;
+            border: 1.5px solid #000;
+
+        }
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(255, 174, 69);
+            font-size: 600%;
+            position: absolute;
+            left: 40.5%;
+            top: -4%;
+
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000;
+        }
+        #da{
+            width: 37%;
+            height: 0.5%;
+            background-color: rgb(255, 167, 85);
+            position: absolute;
+            top: 8%;
+            left: 1%;
+            border-radius: 80%;
+        }
+        #d{
+            width: 37%;
+            height: 0.5%;
+            background-color: rgb(255, 167, 85);
+            position: absolute;
+            top: 8%;
+            left: 61.5%;
+            border-radius: 80%;
+        }
+        #salmo{
+            width: 17%;
+            height: 25%;
+            position: absolute;
+            left: 15%;
+            top: 40%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+            background-image: url(PHOTO/basket.png);
+           
+        }
+
+        #lazza{
+            width: 17%;
+            height: 25%;
+            position: absolute;
+            left: 42.5%;
+            top: 40%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+            background-image: url(PHOTO/boxe.png);
+        }
+
+        #gue{
+            width: 17%;
+            height: 25%;
+            position: absolute;
+            left: 70%;
+            top: 40%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+            background-image: url(PHOTO/CALCIO.HTML.png);
+        }
+
+        
+        #gue:hover{
+            background-image: url(PHOTO/CALCIO.HTML2.png);
+  
+        }
+        #lazza:hover{
+            background-image: url(PHOTO/boxe2.png);
+        }
+        #salmo:hover{
+            background-image: url(PHOTO/basket2.png);
+        }
+
+        #gue:hover, #salmo:hover, #lazza:hover{
+            width: 15%;
+            height: 22%;
+            border: #000 solid 1px;
+            filter: brightness(0.5);
+
+            
+        }
+
+    </style>
+    <body>
+        <div id="Corpo">
+            <h1>SPORT</h1>
+            <div id="da"></div>
+            <div id="d"></div>
+
+            <button id="Gue" onclick="duce()"></button>
+            <button id="salmo" onclick="duc()"></button>
+            <button id="lazza"></button>
+        </div>
+    </body>
+<script src="CALCOLI.JS"></script>
+<script>    
+
+var urlParams = new URLSearchParams(window.location.search);
+    
+var myVar = urlParams.get('myVar');
+localStorage.setItem("myVar", myVar)
+</script>
+</html>

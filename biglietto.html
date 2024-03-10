@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>*** | KingCasinò</title>
+<style>
+    body {
+        background-color: rgb(145, 145, 145);
+    }
+
+    #countdown {
+        margin-left: 15%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 10%;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .gabb{
+        margin-left: 8%;
+        margin-top: 3%;
+        width:30%;
+        height: 50%;
+        background-color: rgb(204, 204, 204);
+
+    }
+
+    .gabbi{
+        margin-left: 60%;
+        margin-top: -30%;
+        width:30%;
+        height: 30%;
+        background-color: rgb(204, 204, 204);
+
+    }
+
+
+    #paypal-button-container {
+        position: absolute;
+        width: 450px;
+        height: 65px;
+        left: 34%;
+        top: 60%;
+
+    }
+</style>
+</head>
+<body>
+<div style="width: 70%; height: 98.4%; position: absolute; top: 0.5%; left: 15%; border: 2px #000 solid; border-radius: 3%; background-color: rgb(197, 197, 197);">
+    <center style="font-size: 500%; margin-top: 2%;">************</center>
+    <div style="position: absolute; left: 10%; height: 80%; width: 80%;border: #000 1px solid;  border-radius: 3%; background-color: rgb(173, 173, 173); " id="gabriele">
+        <div id="ahah" style="background-color: #d8cca700; height: 25%; width: 50%; position: absolute; top: 58%; left: -11%; z-index: 999;"></div>
+        <div class="gabb">
+            <center style="font-size: 260%; margin-top: 2%; color: rgb(255, 202, 87); -webkit-text-stroke-color:#000; -webkit-text-stroke-width: 0.5px;" >DRAW</center>
+            <h1 id="countdown"></h1>
+        </div>
+        <div class="gabbi">
+            <center style="font-size: 260%; margin-top: 2%; color: rgb(255, 202, 87); -webkit-text-stroke-color:#000; -webkit-text-stroke-width: 0.5px;" >COST</center>
+            <p style="margin-left: 5%; font-size: 40px; color: #ffffff;"> 1 ticket = 5€</p>
+        </div>
+    </div>
+
+    <div id="paypal-button-container"></div>
+</div>
+<script>
+    // Definisci la variabile socket per il WebSocket
+    const socket = new WebSocket('ws://localhost:8080');
+
+    const deadline = new Date("2024-06-08T23:59:59").getTime();
+
+    // Aggiorna il countdown ogni secondo
+    const x = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = deadline - now;
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = `
+            
+            <p>Days: ${days}</p>
+            <p>Hours: ${hours}</p>
+            <p>Minutes: ${minutes}</p>
+            <p>Seconds: ${seconds}</p>
+        `;
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+<script src="https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV"></script>
+<script>
+    // Inizializza il pulsante di pagamento di PayPal
+    A = document.getElementById("ahah")
+    A.style.left = '-40%';
+    socket.onerror = function(event) {
+        console.error('Errore di connessione al server:', event);
+        alert('connetion error'); 
+        A.style.left = '25%';
+
+        
+    }
+
+    function initPayPal() {
+        paypal.Buttons({
+            createOrder: function (data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: 5
+                        }
+                    }]
+                });
+            },
+            onApprove: function (data, actions) {
+                return actions.order.capture().then(function (details) {
+                    console.log('Pagamento completato per: ' + details.payer.name.given_name);
+                    // Invia un messaggio WebSocket solo se il pagamento è avvenuto con successo
+                    socket.send('NEW DEP');
+                });
+            }
+        }).render('#paypal-button-container');
+    }
+
+    // Chiamare initPayPal() solo dopo il caricamento completo del DOM
+    document.addEventListener("DOMContentLoaded", function(event) {
+        initPayPal();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <title>GAME | KingCasinò</title>
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    </head>
+    <style>
+        body{
+            background-color: rgb(172, 172, 172);
+        }
+        #Corpo{
+            height: 150%;
+            width: 80%;
+            position: absolute;
+            left: 21.5%;
+            background-color: rgb(126, 126, 126);
+            border-radius: 0%;
+            top: 0%;
+            border: 1.5px solid #000;
+
+        }
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(255, 174, 69);
+            font-size: 415%;
+            position: absolute;
+            left: 43.5%;
+            top: -2%;
+        }
+        #da{
+            width: 35%;
+            height: 0.2%;
+            background-color: rgb(255, 167, 85);
+            position: absolute;
+            top: 3.5%;
+            left: 1%;
+        }
+        #d{
+            width: 35%;
+            height: 0.2%;
+            background-color: rgb(255, 167, 85);
+            position: absolute;
+            top: 3.5%;
+            left: 63.5%;
+        }
+        #salmo{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+            background-image: url(fa.png);
+        }
+
+        #lazza{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 42.5%;
+            top: 15%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+        }
+
+        #gue{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 70%;
+            top: 15%;
+            background-image: url(PHOTO/WILDga.PNG);
+            border-radius: 10%;
+        }
+
+        
+        #gue:hover{
+            background-image: url(PHOTO/WILD2ga.jpg);
+  
+        }
+
+        #salmo:hover{
+            background-image: url(fa2.png);
+        }
+
+        #gue:hover, #salmo:hover, #lazza:hover{
+            width: 14%;
+            height: 10%;
+            border: #000 solid 1px;
+            filter: brightness(0.8);
+
+            
+        }
+        #class{
+            width: 100%;
+            height: 16%;
+            overflow-x: auto; /* abilita lo scrolling orizzontale */
+            white-space: nowrap; /* impedisce il wrap degli elementi */
+            background-color: #ffd54a;
+            z-index: 999;
+            position: absolute;
+            top: 10%;
+        }
+
+        button:hover{
+            filter: brightness(0.8);
+        }
+        button{
+            width: 200px;
+            height: 75px
+        }
+        #duce{
+            position: absolute;
+            left: 21%;
+            top: 45%;
+        }
+        #hitler{
+            position: absolute;
+            left: 40%;
+            top: 45%;
+        }
+        #benito{
+            position: absolute;
+            left: 59%;
+            top: 45%;
+        }
+
+
+        #totti{
+            position: absolute;
+            left: 21%;
+            top: 45%;
+
+        }
+        #ronaldo{
+            position: absolute;
+            left: 40%;
+            top: 45%;
+
+        }
+        #sara_diamante{
+            position: absolute;
+            left: 59%;
+            top: 45%;
+        }
+        #paypal-button-container {
+            position: absolute ;
+            width: 340px;
+            height: 5px;
+            left: 8%;
+            top: 80%;
+            z-index: 999;
+           
+        }
+    </style>
+    <body>
+
+        <div style="background-color: #585858; width: 22%; height: 100%; position: absolute; z-index: 999; top: 0%; left: 0%; border-right: #000 solid 2px;position: fixed;">
+
+            <div style="background-color: #ffd54a; height: 0.3%; width: 100%; border-radius: 40%; position: absolute; top: 1%;"></div>
+            <div style="background-color: #ffd54a; height: 0.3%; width: 100%; border-radius: 40%; position: absolute; top: 99%;"></div>
+            <div style="width: 85%; height: 15%; border: #000 2px solid; position: absolute; top: 8%; left: 8%; background-color: rgb(204, 204, 204);"></div>
+            <div style="width: 0.5%; height: 15.3%; background-color: #000; position: absolute; top: 8%; left: 51%;"></div>
+            <h1 style="color: #000; font-size: 80%; position: absolute; top: 5%; left: 29%;">1</h1>
+            <h1 style="color: #000; font-size: 80%; position: absolute; top: 5%; left: 72%;">2</h1>
+            <div style="position: absolute; border: #000 2px solid; width: 16%; height: 3.5%; left: 42.5%; top: 18%;">
+                <h1 style="color: #000; position: absolute; top: -133%; left: 15%; font-size: 45px;">- </h1>
+                <h1 style="color: #000; position: absolute; top: -133%; left: 65%; font-size: 45px;">- </h1>
+            </div>
+            <ul id="lista" style="font-size: 30px; position: absolute; top: 25%;"></ul>
+            <input id="informazione" style="position: absolute; top: 75%; left: 23.5%; width: 50%; height: 3%;" placeholder="amount..." type="number">
+            <div id="paypal-button-container"></div>
+            
+            
+        </div>        
+
+
+        <div id="Corpo">
+            <h1>GAME</h1>
+            <div id="da"></div>
+            <div id="d"></div>
+            <div class="container">
+                <div style="position: absolute; left: 10%; width: 1230px; height: 240px;background-color: rgb(196, 206, 214); top: 120px; border-radius: 5%; border: #000 2px solid">
+                    <center style="font-size: 45px; color: #7e7e7e;">1X2</center>
+                    <button id="duce" onclick="premuto('|     WIN 1 |  1.21', 2)">WIN 1 <br> 1.50</button>
+                    <button id="hitler" onclick="premuto(' |     X  |  1.40', 2)">X</button>
+                    <button id="benito" onclick="premuto('|    WIN 2   | 1.21', 2)">WIN 2 <br> 1.21</button>     
+                </div>
+                <div style="position: absolute; left: 10%; width: 1230px; height: 240px; background-color: rgb(196, 206, 214); top: 370; border-radius: 5%;border: #000 2px solid">
+                    <center style="font-size: 45px; color: #7e7e7e;">double chance</center>
+                    <button id="totti" onclick="premuto('|    1X  |  1.21', 2)">1X <br> 1.50</button>
+                    <button id="ronaldo" onclick="premuto('|    12  |  1.81', 2)">12</button>
+                    <button id="sara_diamante" onclick="premuto('|    2X   |  2.51', 2)">2X <br> 1.21</button>     
+                </div>
+
+                
+
+                <div style="position: absolute; left: 10%; width: 1230px; height: 240px; background-color: rgb(196, 206, 214); top: 620px; border-radius: 5%; border: #000 2px solid;">
+                    <center style="font-size: 45px; color: #7e7e7e;">Will both teams score?</center>
+                    <button style="position: absolute; left: 31%; top: 45%;" onclick="premuto('|    YES   |   3.5', 2)">YES <br> 3.5</button>
+                    
+                    <button style="position: absolute; left: 50%; top: 45%;"  onclick="premuto('|    NO   |     2.12', 2)">NO <br> 2.12</button>    
+                </div>
+
+                <div style="position: absolute; left: 10%; width: 80%; height: 240px; background-color: rgb(196, 206, 214); top: 870px; border-radius: 5%;border: #000 2px solid">
+                    <center style="font-size: 45px; color: #7e7e7e;">pair/odd</center>
+                    <button style="position: absolute; left: 31%; top: 45%;" onclick="premuto('|    PAIR   |     2.12', 2)">pair <br> 1.50</button>
+                    
+                    <button style="position: absolute; left: 50%; top: 45%;" onclick="premuto('|    ODD   |     2.12', 2)">odd <br> 1.21</button>     
+                </div>
+            </div>
+
+ 
+              
+
+            </div>
+        </div>
+    </body>
+<script src="JAVAS.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+
+var urlParams = new URLSearchParams(window.location.search);
+var myVar = urlParams.get("myVar");
+sessionStorage.setItem("myVar", myVar);
+
+</script>
+    
+
+<script src="JAVAS.js">
+
+</script>
+</html>
