@@ -1,0 +1,172 @@
+<html>
+    <head><title>Session Registration</title></head>
+    <style>
+        #email{
+
+        }
+        body{
+            background-color: rgb(56, 56, 56);
+        }
+        div{
+            background-color: rgb(85, 85, 85);
+            width: 80%;
+            height: 90%;
+            position: absolute;
+            top: 5%;
+            left: 10%;
+        }
+        #email{
+            position: absolute;
+            left:25%;
+            top:30%;
+        }
+        #lab{
+            position: absolute;
+            left: 15%;
+            top: 30%;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        #age{
+            position: absolute;
+            left:25%;
+            top:50%;
+        }
+        #lab2{
+            position: absolute;
+            left: 15%;
+            top: 50%;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        #country{
+            position: absolute;
+            left:63.5%;
+            top:30%;
+        }
+        #countrylab{
+            position: absolute;
+            left: 53.5%;
+            top: 30%;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        #name{
+            position: absolute;
+            left:63.5%;
+            top:50%;
+        }
+        #namelab{
+            position: absolute;
+            left: 53.5%;
+            top: 50%;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        button{
+            width:12%;
+            height: 7.5%;
+            position: absolute;
+            left: 44%;
+            top: 70%;
+            border: 1px solid #000;
+            border-radius: 10%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: beige;
+            background-color: #696969;
+        }
+        #h1{
+            color: rgb(255, 0, 0);
+            opacity: 0%;
+            position: absolute;
+            top: 65%;
+            left: 15%;
+        }
+        
+    </style>
+    <body>
+        <div>
+            <center style="font-size: 38px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color :beige">Session Registration</center>
+            
+            <input id="email">
+            <label for="email" id="lab">Email:</label>
+            <input id="age" type="number">
+            <label for="age" id="lab2">Age:</label>
+            <div style="background-color: aliceblue; width: 0.3%; height: 75%; position: absolute; left: 50%; top: 15%;"></div>
+            <input id="country">
+            <label for="country" id="countrylab">name: </label>
+            <input id="name">
+            <label for="name" id="namelab">surname: </label>
+            <button type="submit" id="button" onclick="inviaMessaggio()">Continue ></button>
+            <h5 id="h1"></h1>
+        </div>
+    </body>
+    <script>
+let inputValue = '';
+
+// Seleziona l'elemento di input
+const messa = document.getElementById('email');
+
+// Aggiungi un event listener per catturare l'evento di input
+messa.addEventListener('input', function(event) {
+    // Aggiorna la variabile con il valore dell'input
+    inputValue = event.target.value;
+    console.log(inputValue); // Mostra il valore memorizzato nella console (opzionale)
+
+    // Salva il valore nell'localStorage ad ogni cambiamento nell'input
+    sessionStorage.setItem('CRED', inputValue);
+});
+
+// Aggiungi un event listener per catturare l'evento di change
+messa.addEventListener('change', function(event) {
+    // Aggiorna la variabile con il valore dell'input
+    inputValue = event.target.value;
+    console.log(inputValue); // Mostra il valore memorizzato nella console (opzionale)
+
+    // Salva il valore nell'localStorage quando l'utente ha finito di inserire il valore
+    sessionStorage.setItem('CRED', inputValue);
+});
+
+console.log('ziopera');
+const socket = new WebSocket('ws://localhost:8080');
+var ga = document.getElementById("button")
+socket.onerror = function() {
+    ga.disabled = true
+    alert("connection error")
+}
+// Ottieni il valore dell'input
+const message = inputValue;
+const name = document.getElementById('name')
+// Ottieni il valore dell'età
+const age1 = document.getElementById('age');
+const age = age1.value;
+
+// Imposta l'opacità di un elemento con id "h1" a 1
+const wr = document.getElementById('h1');
+wr.style.opacity = 1;
+
+// Salva l'età nella sessionStorage
+sessionStorage.setItem('age', age);
+
+// Funzione per reindirizzare a una nuova pagina
+function go(){
+    const myVar = sessionStorage.getItem('CRED') // La tua variabile
+    window.location.href = "games.html?myVar=" + encodeURIComponent(myVar)
+}
+
+// Funzione per inviare un messaggio
+function inviaMessaggio() {
+    const message = inputValue; // Ottieni il valore dell'input al momento dell'invio del messaggio
+    socket.send('SUBS')
+    socket.send(message);
+    sessionStorage.setItem("CRED", message);
+    console.log('ah');
+    go();
+
+}
+
+
+    </script>
+    <script src="server.js"></script>
+    <script src="CALCOLI.JS"></script>
+</html>
