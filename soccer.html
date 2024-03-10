@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title>SOCCER | KingCasinò</title>
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    </head>
+    <style>
+        body{
+            background-color: rgb(172, 172, 172);
+        }
+        #Corpo{
+            height: 170%;
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            background-color: rgb(126, 126, 126);
+            border-radius: 3%;
+            top: 2%;
+            border: 1.5px solid #000;
+
+        }
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(255, 174, 69);
+            font-size: 415%;
+            position: absolute;
+            left: 43%;
+            top: -2%;
+        }
+        #da{
+            width: 35%;
+            height: 0.2%;
+            background-color: rgb(255, 167, 85);
+            position: absolute;
+            top: 3.5%;
+            left: 1%;
+        }
+        #d{
+            width: 35%;
+            height: 0.2%;
+            background-color: rgb(255, 167, 85);
+            position: absolute;
+            top: 3.5%;
+            left: 63.5%;
+        }
+        #salmo{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+            background-image: url(fa.png);
+        }
+
+        #lazza{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 42.5%;
+            top: 15%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+        }
+
+        #gue{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 70%;
+            top: 15%;
+            background-image: url(PHOTO/WILDga.PNG);
+            border-radius: 10%;
+        }
+
+        
+        #gue:hover{
+            background-image: url(PHOTO/WILD2ga.jpg);
+  
+        }
+
+        #salmo:hover{
+            background-image: url(fa2.png);
+        }
+
+        #gue:hover, #salmo:hover, #lazza:hover{
+            width: 14%;
+            height: 10%;
+            border: #000 solid 1px;
+            filter: brightness(0.8);
+
+            
+        }
+        #class{
+            width: 100%;
+            height: 16%;
+            overflow-x: auto; /* abilita lo scrolling orizzontale */
+            white-space: nowrap; /* impedisce il wrap degli elementi */
+            background-color: #ffd54a;
+            z-index: 999;
+            position: absolute;
+            top: 10%;
+        }
+        .elemento {
+            display: inline-block; /* permette agli elementi di essere sulla stessa riga */
+            width: 300px; /* larghezza desiderata di ogni elemento */
+            height: 300px; /* altezza desiderata di ogni elemento */
+            background-color: lightblue; /* colore di sfondo per gli elementi */
+        }
+        .container {
+            width: 90%; /* larghezza desiderata del div */
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            overflow-x: auto; /* abilita lo scrolling orizzontale */
+            white-space: nowrap; /* impedisce il wrap degli elementi */
+        }
+        .containera {
+            width: 90%; /* larghezza desiderata del div */
+            position: absolute;
+            top: 55%;
+            left: 5%;
+            overflow-x: auto; /* abilita lo scrolling orizzontale */
+            white-space: nowrap; /* impedisce il wrap degli elementi */
+        }
+        button:hover{
+            filter: brightness(0.8);
+        }
+
+    </style>
+    <body>
+        <div id="Corpo">
+            <h1>GAMES</h1>
+            <div id="da"></div>
+            <div id="d"></div>
+            <div style="position: absolute; top: 16%; height: 0.2%; width: 7%; background-color: rgb(218, 218, 218); border-radius: 100%;"></div>
+            <h2 style="position: absolute; top: 11%; left: 8%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 350%; color: #d8d8d8;">SERIE A </h2>
+            <div class="container">
+                
+                
+                <button class="elemento" onclick="ab()"></button> 
+                <button class="elemento"></button>
+                <button class="elemento"></button>
+                <button class="elemento"></button>
+                <button class="elemento"></button>
+                <button class="elemento"></button>
+            </div>
+            <div style="position: absolute; top: 50%; height: 0.2%; width: 7%; background-color: rgb(218, 218, 218); border-radius: 100%;"></div>
+            <h2 style="position: absolute; top: 45%; left: 8%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 350%; color: #d8d8d8;">SERIE B </h2>
+            <div class="containera">
+                <button class="elemento"></button> 
+                <button class="elemento"></button>
+                <button class="elemento"></button>
+                <button class="elemento"></button>
+                <button class="elemento"></button>
+                <button class="elemento"></button>
+            </div>
+              
+
+            </div>
+        </div>
+    </body>
+<script src="CALCOLI.JS"></script>
+<script>    
+
+var urlParams = new URLSearchParams(window.location.search);
+    
+var myVar = urlParams.get('myVar');
+localStorage.setItem("myVar", myVar)
+</script>
+</html>
