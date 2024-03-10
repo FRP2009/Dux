@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <title>EmojiRun | KingCasinò</title>
+    <title>WildSpin</title>
     <style>
         body {
             margin: 0;
@@ -27,48 +27,44 @@
             width: 250px;
             height: 400px;
             background-color: rgba(202, 202, 202, 0);
-            font-size: 120px;
+            font-size: 135px;
             border-radius: 20px;
+            filter: brightness(0.85);
         }
 
-        .slot1 { bottom: 18%; left: 70px; }
-        .slot2 { bottom: -8%; left: 70px; }
-        .slot3 { bottom: 18%; left: 310px;}
-        .slot4 { bottom: -8%; left: 310px; }
-        .slot5 { bottom: 18%; left: 550px; }
-        .slot6 { bottom: -8%; left: 550px; }
-        .slot7 { bottom: 18%; left: 780px; }
-        .slot8 { bottom: -8%; left: 780px; }
+        .slot1 { bottom: 15%; left: 80px; }
+        .slot2 { bottom: -10%; left: 80px; }
+        .slot3 { bottom: 15%; left: 310px;}
+        .slot4 { bottom: -10%; left: 310px; }
+        .slot5 { bottom: 15%; left: 535px; }
+        .slot6 { bottom: -10%; left: 535px; }
+        .slot7 { bottom: 15%; left: 770px; }
+        .slot8 { bottom: -10%; left: 770px; }
 
         #corpo {
             display: flex;
             flex-direction: column;
             
             width: 100%;
-            height: 110%;
+            height: 100%;
             display: flex;
             background-color: cadetblue;
             align-items: center;
-            background-image: url(Sol.png);
+            background-image: url(foto2.png);
             margin-top: 100%;
-            border: #000 2px solid;
-            
-
         }
 
         .sfondo {
             position: absolute;
-            background-image: url(slo.png);
-            top: -18%;
-            width: 78.2%;
-            height: 115%;
-            border-radius: 30px;
-            
-            background-color: rgba(75, 75, 75, 0);
-            left: 10%;        
+            background-image: url(PHOTO/slo.png);
+            top: -100px;
+            width: 78%;
+            height: 108%;
+            border-radius: 13%;
+            border: 2px solid rgb(46, 46, 46); 
+            background-color: rgb(75, 75, 75);
+            left: 12%;        
         }
-        
-
 
         .immagine {
             position: absolute;
@@ -76,42 +72,50 @@
             top: 87%;
             border: 3px #000 solid;
             border-radius: 10px;
-            width: 245px;
-            height: 90px;
+            width: 210px;
+            height: 75px;
+            z-index: 999;
         }
 
 
 
         .button2, .button3, .button4, .button10, .button20, .button50 {
             width: 128px;
-            height: 116px;
-            border-radius: 15px;
+            height: 128px;
+            border-radius: 27px;
             position: absolute;
             top: 102%;
             font-size: 30px;
-            background-image: url(but2.png);
+            background-image: url(button.png);
             border: 1.5px #000 solid;
-            color: rgb(222, 184, 135);
+            color: burlywood;
+            border-radius: 100%;
             
         }
         .button10 span, .button20 span, .button4 span, .button50 span, .button3 span {
             display: inline-block;
             vertical-align: middle;
             line-height: middle;
-            top: 25%;
+            top: 36%;
             position: absolute;
             left: 33%;
             font-family: sans-serif;
+            color: #ffffff;
+            -webkit-text-stroke-color: #000 ;
+            -webkit-text-stroke-width: 0.5px
             
         }
         .button2 span{
             display: inline-block;
             vertical-align: middle;
             line-height: middle;
-            top: 25%;
+            top: 36%;
             position: absolute;
             left: 20%;
             font-family: sans-serif;
+            -webkit-text-stroke-color: #000 ;
+            -webkit-text-stroke-width: 0.5px;
+            color: #ffffff;
         }
 
         .button2 { left: 2px; }
@@ -167,7 +171,7 @@
             color: rgb(255, 251, 0);
             font-size: 80px;
             -webkit-text-stroke-width: 0px;
-            text-stroke-width: 2px #000 solid;
+            -text-stroke-width: 2px #000 solid;
             margin-bottom: 20px;
         }
 
@@ -204,21 +208,23 @@
             display: flex;
             background-color: cadetblue;
             align-items: center;
-            background-image: url(Sol.png);
+            background-image: url(foto2.png);
             
         }
 
         .button {
-            width: 380px;
-            height: 108px;
-            border-radius: 18px;
+            width: 370px;
+            height: 105px;
+            border-radius: 0px;
             position: absolute;
+            border-radius: 15%;
             top: 100%;
-            background-image: url(but.png);
+            background-image: url(PHOTO/fut.png);
             border: none;
             font-size: 40px;
             color: brown;
             border: #000 2px solid;
+            
             left: 37%;
         }
 
@@ -227,10 +233,11 @@
             font-size: 35px;
             font-family: fantasy;
             color: cornsilk;
-            top: 83%;
-            right: 81%;
+            top: 78%;
+            right: 85%;
             font-size: 26px;
             font-style: italic;
+            z-index: 999;
             
             
             
@@ -251,13 +258,13 @@
       
 
         .HUGE {
-            color: rgb(255, 0, 0);
-            font-size: 280px;
+            color: rgb(255, 251, 0);
+            font-size: 250px;
             position: absolute;
             left: 20%;
             -webkit-text-stroke-color: #000;
             -webkit-text-stroke-width: 3px  ;
-            top: -15%;
+            top: -20%;
             
         }
       
@@ -357,7 +364,7 @@
         .slot-symbol {
             animation: fall 0.5s ease-out;
         }
-        .contoimm{
+        .abcimm{
             width: 220px;
             height: 85px;
             border-radius: 0px;
@@ -367,7 +374,7 @@
             background-color: rgb(192, 191, 191);
             height: 80%;
             position: absolute;
-            top: 2000px;
+            top: 1970px;
             left: 15%;
             width: 1300px;
             border: #000 solid 3px;
@@ -425,26 +432,37 @@
 
 
         #STO{
-            width: 25%;
-            height: 6%;
+            width: 35%;
+            height: 7%;
             background-color: #f0f0f0;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 120%;
             position: absolute;
-            left: -33%;
-            top: 2%;
+            left: 0%;
+            top: 0%;
             border-radius: 20%;
             background-image: url(saldo.png);
             border: #000 solid 3px;
             color: rgb(49, 1, 49);
+            z-index: 999;
             
-        }
-
-
-
+        }    
         
+        #overlay {
+            display: none; /* Inizialmente nascosto */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Grigio con opacità del 50% */
+            z-index: 9999; /* Assicura che il div sia sopra a tutti gli altri elementi */
+            pointer-events: none; /* Impedisce l'interazione con il div */
+        }
+      
     </style>
 </head>
+
 <body>
     <div id="tutto">
         
@@ -453,16 +471,17 @@
             <div id="corpo_slots" >
                 
                 <div class="sfondo">  
-                    <img src="PHOTO/ricco.png" style="position:absolute; left: -30%; top: 26.5%;">
-                    <div style="background-color: gray;width: 15%; height: 5%;position: absolute; left: -60%; border: #000 2px solid;border-radius: 15%; top: 133%;">
-                        <a href="#vv" style="position: absolute; top: 15%; left: 5%; font-size: 85%; color: #ffcc00; z-index: 999; text-decoration-line: none;">MAKE A DEPOSIT</a>
+                    <img src="PHOTO/sopra.png" style="position: absolute; top: -14px; left: -0%; z-index: 999;">
+                    <img src="PHOTO/ricco.png" style="position:absolute; left: -35%; z-index: 998; top: 24%;">
+                    <div style="background-color: gray;width: 15%; height: 5%;position: absolute; left: -40%; border: #000 2px solid;border-radius: 15%; top: 114%;">
+                        <a href="#vv" style="position: absolute; top: 10%; left: 20%; font-size: 85%; color: #ffcc00; z-index: 999; text-decoration-line: none;">MAKE A DEPOSIT</a>
                     </div>
-                    <div style="background-color: gray;width: 15%; height: 5%;position: absolute; left: -60%; border: #000 2px solid;border-radius: 15%; top: 140%;">
+                    <div style="background-color: gray;width: 15%; height: 5%;position: absolute; left: -40%; border: #000 2px solid;border-radius: 15%; top: 120%;">
                         <a href="#ABB" style="position: absolute; top: 10%; left: 20%; font-size: 100%; color: #ffcc00; z-index: 999; text-decoration-line: none;">Withdraw</a>
                     </div>
                     <button onclick="Fa()" style="width: 10%; height: 7% ;position: absolute; left: 150%; top: -18%;font-size: 25px; background-color: #fffd89;"></button>
                     <div id="STO"></div>
-                    <img src="grah.png" class="immagine">
+                    <img src="conto.png" class="immagine">
                     <div class="slot slot1" id="reel1"></div>
                     <div class="slot slot2" id="reel2"></div>
                     <div class="slot slot3" id="reel3"></div>
@@ -471,25 +490,24 @@
                     <div class="slot slot6" id="reel6"></div>
                     <div class="slot slot7" id="reel7"></div>
                     <div class="slot slot8" id="reel8"></div>
-                    <img src="new.png" style="position: absolute; left: -6%; top: -18%; opacity: 0;">
 
 
                     <h1 id="blinkingText" class="HUGE">HUGE WIN!</h1>
                     <h1 id="Win" class="HUGE">WIN!</h1>
                 </div>
-                <button onclick="spin()" class="button"></button>
-                <button id="bottoneAggiungi1" class="button2" onclick="sce(0.20)"><span> €0.20</button>
+                <button onclick="spin()" class="button" id="myButton"></button>
+                <button id="bottoneAggiungi1" class="button2" onclick="sce(0.20)"><span> €0.20</span></button>
                 <button id="bottoneAggiungi2" class="button3" onclick="sce(1)"><span>€1</span></button>
                 <button id="bottoneAggiungi3" class="button4" onclick="sce(2)"><span>€2</span></button>
                 <button id="bottoneAggiungi10" class="button10" onclick="sce(5)"><span>€5</span></button>
                 <button id="bottoneAggiungi20" class="button20" onclick="sce(10)"><span>€10</span></button>
                 <button id="bottoneAggiungi50" class="button50" onclick="sce(20)"><span>€20</span></button>
                 <p id="score" class="score"></p>
-                
+               
             </div>
         </div>
         <section>
-            <div class="soto">
+            <div class="soto" id="AHAH">
                 
                 <div class="corpo" style="display: flex; top: 100%; background-color: rgb(175, 175, 175);">
                     <h1 class="wrote" id="vv">MONEY DEPOSIT</h1>
@@ -504,7 +522,7 @@
             <div class="withdraw_">
                 
                 <div>
-                    <center style="font-size: 85px;">Withdraw</center>
+                    <center style="font-size: 85px;" id="ABB">Withdraw</center>
                 </div>
 
                 <form id="totale" action="/ricevi-informazioni" method="post">
@@ -514,7 +532,7 @@
                         <label for="Amount" class="label2">Amount:</label>
                         <input type="Amount" id="Amount" name="Amount" required>
                         <button type="submit" onclick="inviaMessaggio()" class="INVIA" id="gaga">get</button>
-                        
+                        <div id="overlay"></div>
                     </div>
                 </form>
                
@@ -522,38 +540,62 @@
         </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-    <script src="MoneyEarnJs.js"></script>
+    <script src="CALCOLI.JS"></script>
     <script src="https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="server.js"></script>
+
     <script>
-        const a = document.getElementById('Amount')
-    
-    const socket = new WebSocket('ws://localhost:8080');
-    
-    var urlParams = new URLSearchParams(window.location.search);
-    var myVar = urlParams.get('CRED');
-    var amount = document.getElementById('Amount')
-    var ae = amount.value
 
-    
-    function inviaMessaggio() {
-    
-    
-    
-        if (ae <= conto){
-            conto -= ae;
-            aggiornaConto(conto);
-            alert('the money are coming to your PayPal!')   
-            socket.send(myVar);
-            socket.send(ae); 
-        }
-        else {
-            alert('insert a valid amount')
-        }           
-    }
 
- 
+function  gabbana(){
+    window.location.href= WildSpin.HTML + "#vv"
+}
+
+
+const a = document.getElementById('Amount');
+const socket = new WebSocket('ws://localhost:8080');
+
+var button = document.getElementById("myButton");
+var ghigo = document.getElementById("gaga");
+
+var urlParams = new URLSearchParams(window.location.search);
+let inputValue = '';
+var myVar = urlParams.get('CRED');
+var amount = document.getElementById('Amount');
+var ae = amount.value;
+
+amount.addEventListener('input', function(event) {
+    inputValue = event.target.value;
+    console.log(inputValue);
+    sessionStorage.setItem('amala', inputValue);
+});
+
+function inviaMessaggio() {
+    if (ae <= abc) {
+        abc -= ae;
+        aggiornaabc(abc);
+        alert('the money are coming to your PayPal!');
+        socket.send(myVar);
+        input = localStorage.getItem('amala');
+        socket.send(inputValue); 
+    } else {
+        alert('insert a valid amount');
+    }           
+}
+
+socket.onerror = function(event) {
+    console.error('Errore di connessione al server:', event);
+    alert('connessione al server fallita');
+    button.disabled = true;
+    
+};
+
+
+
+
+
+
     </script>
 
 
