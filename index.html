@@ -1,4 +1,263 @@
 <html>
-    <head><title>ciao</title></head>
-    <body style="background-color: red;"></body>
+    <head>
+        <title>Our Games | KingCasinò</title>
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    </head>
+    <style>
+        body{
+            background-color: #888888;
+            margin: 0%;
+
+
+        }
+        #lato{
+            background-color:rgb(31, 31, 31);
+            position: absolute;
+            height: 100%;
+            width: 13%;
+            border-right: #000 3px solid;
+            left: 0%;
+            position: fixed;
+        }
+        #rest{
+            width: 10%;
+            height: 100%;
+
+            background: linear-gradient(to right, rgb(30, 24, 37),#888888);
+            position: absolute;
+            left: 6.5%;
+
+
+        }
+        a{
+            color: #ffd54a;
+            text-decoration-line: none;
+            font-size: 25px;
+            position: absolute;
+            left: 18%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        #user{
+            position: absolute;
+            top: 50%;
+            font-size: 25px;
+            left: 5%;
+            color: #9b9b9b;
+        }
+        #Home{
+            top: 43%;
+        }
+        #Slot{
+            top: 54%;
+        }
+        #Jackpot{
+            top: 65%;
+        }
+        #s{
+            background-color: rgb(66, 66, 66);
+            width: 90%;
+            height: 20%;
+            position: absolute;
+            left: 1%;
+            border-radius: 15%;
+            border: 2px solid #000;
+            top: 5%;
+        }
+        #d{
+            background-color: rgb(53, 52, 52);
+            width: 85%;
+            height: 42%;
+            position: absolute;
+            left: 5%;
+            border-radius: 0%;
+            border: 2px solid #000;
+            top: 38%;
+        }
+        #corpo{
+            background-color: rgb(197, 197, 197);
+            width: 750%;
+            height: 200%;
+            position:absolute;
+            left: 125%;
+            border-radius: 0%;
+            border: 2px solid #000;
+            top: 7%;
+            border-radius: 3%;
+        }
+        #sp{
+            top: 80%;
+        }
+        #slotsdiv{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 15%;
+            top: 10%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+
+        }
+        #jackpotgames{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 40%;
+            top: 10%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+        }
+        #sport{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 65%;
+            top: 10%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+
+        }
+
+        #sport:hover, #jackpotgames:hover, #slotsdiv:hover{
+            width: 14%;
+            height: 10%;
+            border: #000 solid 1px;
+            
+
+            top: 10%;
+            
+
+        }
+        a:hover{
+            font-size: xx-large;
+        }
+        .button:hover{
+            filter: brightness(0.5);
+        }
+
+        #altro{
+            width: 10%;
+            height: 100%;
+
+            background: linear-gradient(to right, rgb(30, 24, 37),#888888);
+            position: absolute;
+            left: 6.5%;
+        }
+        #gue{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 15%;
+            top: 40%;
+            background-image: url(WILD.PNG);
+            border-radius: 10%;
+        }
+        #salmo{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+            background-image: url(fa.png);
+        }
+        #lazza{
+            width: 15%;
+            height: 11%;
+            position: absolute;
+            left: 65%;
+            top: 40%;
+            background-color: #ffd54a;
+            border-radius: 10%;
+        }
+
+        #gue:hover, #salmo:hover, #lazza:hover{
+            width: 14%;
+            height: 10%;
+            border: #000 solid 1px;
+            filter: brightness(0.8);
+
+            top: 40%;
+        }
+        #aka{
+            position: absolute;
+            top: 55%;
+            left: 6%;
+            color: #888888;
+        }
+        #gue:hover{
+            background-image: url(WILD2.jpg);
+  
+        }
+        #salmo:hover{
+            background-image: url(fa2.png);
+        }
+
+
+
+    </style>
+    <body>
+
+
+
+
+        <div id="rest">
+            <div id="corpo">
+                <button id="slotsdiv"></button>
+                <button id="Jackpotgames"></button>
+                <button id="sport"></button>
+                <center style="position: absolute; top: 30%; font-size: 70px; left: 32%; color: #ffe48d;-webkit-text-stroke-color: #000000; -webkit-text-stroke-width: 0.5px;">our favorite games</center>
+                <div style="height: 0.2% ; width: 30%; background-color: aliceblue; position: absolute; top: 34%; left: 0%; border-radius: 80%;"></div>
+                <div style="height: 0.2% ; width: 30%; background-color: aliceblue; position: absolute; top: 34%; left: 70%; border-radius: 80%;"></div>
+                <button id="Gue" onclick="going()"></button>
+                <button id="salmo" onclick="g()"></button>
+                <button id="lazza"></button>
+            </div>
+            <div style="background: linear-gradient(to right, rgb(30, 24, 37),#888888);; width: 100%; height: 150%; position: absolute; top: 100%; font-size: 10px;">
+
+
+            </div>
+        </div>
+        <div id="altro">
+        </div>
+        <div id="lato">
+            <div id="s">
+                <img src="user.png" style="position: absolute; left: 20%; top: -12%;  border-radius: 100%; border: #ffd54a 1px solid;">
+                <h1 id="aka"></h1>
+                <a href="Registration.html" style="position: absolute; top: 72%; left: 20%;">registration</a>
+
+            </div>
+            <div id="d"></div>
+            <img src="Raia.png" style="position: absolute; top: 86%; left: 16.5%;">
+            
+            <br>
+
+            <br>
+            <a id="Slot" onclick="go_page()">Slot ♠</a>
+            <br>
+            <a id="Jackpot" onclick="abra()">Jackpots<br> Games ♦</a>
+            <br>
+            <a id="Home" onclick="vai()">Sport ♣</a> 
+
+        
+        </div>
+        <div style="position: absolute; top: 215%; left: 25%; background-color: #92929200; width: 40%; height: 20%;"><p>Copyright © 2024. Kings Italia Limited, società collegata ad Kings Holdings PLC. King Italia Limited, Concessione GAD n. 15014.
+
+            Kings è società di diritto maltese, con sede legale in Level 7, Tagliaferro Business Centre, 14, High Street, Sliema SLM 1549, Malta.
+            
+            La concessione per l’esercizio e la raccolta dei giochi a distanza in Italia è stata assegnata dall’Agenzia delle dogane e dei Monopoli.</p></div>
+    </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="CALCOLI.JS"></script>
+
+<script>
+    function going(){
+    window.location.href = "WildSpin.HTML?myVar=" + encodeURIComponent(sessionStorage.getItem('CRED'));
+} 
+
+function g(){
+    window.location.href = "MoneyEarn.html?myVar=" + encodeURIComponent(sessionStorage.getItem('CRED'));
+}
+</script>
+
 </html>
