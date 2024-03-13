@@ -549,4 +549,3 @@ socket.onopen = () => {
     g.style.opacity = 1
     ghigo.disabled = false
 };
-
