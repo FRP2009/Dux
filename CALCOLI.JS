@@ -5,7 +5,7 @@ let ZIOPERAAA = document.getElementById("score");
 let info;
 var symbols = [" 🍊", " 🍈", " 🍉", " 🍑", " 🍌"];;
 let amountValue;
-const socket = new WebSocket('ws://localhost:8080');
+const socket = new WebSocket('ws://2.36.106.254:8080');
 
 
 
