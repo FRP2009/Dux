@@ -27,24 +27,25 @@
             width: 250px;
             height: 400px;
             background-color: rgba(202, 202, 202, 0);
-            font-size: 135px;
+            font-size: 7vw;
             border-radius: 20px;
+            filter: brightness(0.85);
         }
 
-        .slot1 { bottom: 15%; left: 40px; }
-        .slot2 { bottom: -25%; left: 40px; }
-        .slot3 { bottom: 15%; left: 240px;}
-        .slot4 { bottom: -25%; left: 240px; }
-        .slot5 { bottom: 15%; left: 430px; }
-        .slot6 { bottom: -25%; left: 430px; }
-        .slot7 { bottom: 15%; left: 615px; }
-        .slot8 { bottom: -25%; left: 615px; }
+        .slot1 { bottom: 15%; left: 7%; }
+        .slot2 { bottom: -10%; left: 7%; }
+        .slot3 { bottom: 15%; left: 30%;}
+        .slot4 { bottom: -10%; left: 30%; }
+        .slot5 { bottom: 15%; left: 51%; }
+        .slot6 { bottom: -10%; left: 51%; }
+        .slot7 { bottom: 15%; left: 73%; }
+        .slot8 { bottom: -10%; left: 73%; }
 
         #corpo {
             display: flex;
             flex-direction: column;
             
-            width: 100%;
+            width: 70%;
             height: 100%;
             display: flex;
             background-color: cadetblue;
@@ -52,17 +53,28 @@
             background-image: url(foto.png);
             margin-top: 100%;
         }
+        #corpo {
+            width: 7cqb;
+            height: 100%;
+            display: flex;
+            background-color: cadetblue;
+            align-items: center;
+            background-image: url(foto.png);
+            
+        }
 
         .sfondo {
             position: absolute;
-            background-image: url(slot.png);
-            top: 10px;
-            width: 63%;
-            height: 79%;
-            border-radius: 30px;
+           
+            top: -12%;
+            width: 78%;
+            height: 108%;
+            border-radius: 13%;
             border: 2px solid rgb(46, 46, 46); 
             background-color: rgb(75, 75, 75);
-            left: 20%;        
+            left: 12%;  
+            justify-content: center; /* centra il contenuto lungo l'asse principale (orizzontalmente) */      
+            display: flex;
         }
 
         .immagine {
@@ -71,8 +83,8 @@
             top: 87%;
             border: 3px #000 solid;
             border-radius: 10px;
-            width: 245px;
-            height: 90px;
+            width: 10vw;
+            height: 4vw;
             z-index: 999;
         }
 
@@ -81,33 +93,40 @@
         .button2, .button3, .button4, .button10, .button20, .button50 {
             width: 128px;
             height: 128px;
-            border-radius: 27px;
+            
             position: absolute;
             top: 102%;
             font-size: 30px;
-            background-image: url(bottone2b.png);
+            
             border: 1.5px #000 solid;
             color: burlywood;
+            border-radius: 27%;
             
         }
         .button10 span, .button20 span, .button4 span, .button50 span, .button3 span {
             display: inline-block;
             vertical-align: middle;
             line-height: middle;
-            top: 25%;
+            top: 36%;
             position: absolute;
             left: 33%;
             font-family: sans-serif;
+            color: #ffffff;
+            -webkit-text-stroke-color: #000 ;
+            -webkit-text-stroke-width: 0.5px
             
         }
         .button2 span{
             display: inline-block;
             vertical-align: middle;
             line-height: middle;
-            top: 25%;
+            top: 36%;
             position: absolute;
             left: 20%;
             font-family: sans-serif;
+            -webkit-text-stroke-color: #000 ;
+            -webkit-text-stroke-width: 0.5px;
+            color: #ffffff;
         }
 
         .button2 { left: 2px; }
@@ -179,7 +198,6 @@
             color: #000;
             padding: 15px 30px;
             border: none;
-            border-radius: 10px;
             cursor: pointer;
         }
         
@@ -205,27 +223,29 @@
         }
 
         .button {
-            width: 245px;
-            height: 145px;
-            border-radius: 32px;
+            width: 28%;
+            height: 18%;
+            
             position: absolute;
+            border-radius: 15%;
             top: 100%;
-            background-image: url(bottone.png);
+            
             border: none;
             font-size: 40px;
             color: brown;
-            border: #000 2px solid;
-            left: 41%;
+            
+            
+            left: 37%;
         }
 
         .score {
             position: absolute;
-            font-size: 35px;
+            font-size: 2vw;
             font-family: fantasy;
             color: cornsilk;
-            top: 70%;
-            right: 70%;
-            font-size: 26px;
+            top: 78%;
+            right: 85%;
+            font-size: 2vw;
             font-style: italic;
             z-index: 999;
             
@@ -280,8 +300,8 @@
         }
         #paypal-button-container {
             position: absolute ;
-            width: 450px;
-            height: 65px;
+            width: 22vw;
+            height: 6vw;
             left: 25%;
             top: 60%;
            
@@ -292,10 +312,10 @@
         .corpo {
             background-color: rgb(202, 202, 202);
             position: absolute;
-            width: 1300px;
-            height: 900px;
-            left: 15%;
-            top: 3%;
+            width: 65vw;
+            height: 40vw;
+            left: 18%;
+            top: 18%;
             border-radius: 50px;
             right: 15%;
             border: 3px solid #000000;
@@ -303,7 +323,7 @@
  
         .wrote {
             position: absolute;
-            font-size: 80px;
+            font-size: 4vw;
             color: rgb(35, 57, 58);
             left: 25%;
             top: -7%;
@@ -321,8 +341,8 @@
         }
 
         .input {
-            width: 280px;
-            height: 50px;
+            width: 15vw;
+            height: 2vw;
             border-radius: 15px;
             position: absolute;
             left: 57%;
@@ -361,21 +381,22 @@
 
         }
         .withdraw_{
-            background-color: rgb(192, 191, 191);
-            height: 80%;
+            
+            width: 65vw;
+            height: 40vw;
             position: absolute;
-            top: 1970px;
-            left: 15%;
-            width: 1300px;
             border: #000 solid 3px;
             border-radius: 75px;
+            top: 115vw; 
+            background-color: rgb(175, 175, 175); 
+            left: 17vw;
         }   
         #somma{
             width: 200px;
             height: 100px;
         }
         #a{    
-            width: 70%;
+            width: 65%;
             height: 80%;
             position: absolute;
             right: 15%;
@@ -393,11 +414,11 @@
             border-radius: 15px;
         }
         #Amount{
-            width: 280px;;
-            height: 45px;
+            width: 12vw;;
+            height: 2vw;
             position: absolute;
-            left: 460px;
-            top: 220px;
+            left: 23vw;
+            top: 10vw;
             border-radius: 15px;
         }
 
@@ -409,50 +430,33 @@
             top: 140px;
         }
         .label2{
-            top: 210px;
+            top: 10vw;
+            font-size: 2.2vw;
         }
         .INVIA{
-            width: 150px;
-            height: 50px;
+            width: 8vw;
+            height: 3.5vw;
             font-size: x-large;
             position: absolute;
-            right: 320px;
-            top: 50%;
+            right: 16vw;
+            top: 55%;
         }
 
-        #bet{
-            
-            position: absolute;
-            width: 150px;
-            height: 118px;
-            left: 41%;
-            top: -22%;
-            background-image: url(PHOTO/totti.png);
-            border: 2px #000 solid;
-            border-radius: 22%;
-            font-size: 35px;
-            color: rgb(90, 64, 39);
-            font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            z-index: 999;
-        }
+
         #STO{
             width: 35%;
             height: 7%;
             background-color: #f0f0f0;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 120%;
+            font-size: 1.2vw;
             position: absolute;
-            left: -60%;
-            top: -20%;
+            left: 0%;
+            top: 0%;
             border-radius: 20%;
             background-image: url(saldo.png);
             border: #000 solid 3px;
             color: rgb(49, 1, 49);
+            z-index: 999;
             
         }    
         
@@ -474,18 +478,23 @@
 <body>
     <div id="tutto">
         
+
+        
         <div id="corpo">
+            <div style="background-color: #000; width: 100%; height: 5%;"></div>
             
             <div id="corpo_slots" >
                 
+
                 
                 <div class="sfondo">  
-                    <img src="PHOTO/duuu.png" style="position: absolute; top: -25%; left: 0.7%; z-index: 999;">
-                    <img src="PHOTO/DONNA SLOT.png" style="position:absolute; left: -14%; z-index: 998;">
-                    <div style="background-color: gray;width: 15%; height: 5%;position: absolute; left: -60%; border: #000 2px solid;border-radius: 15%; top: 133%;">
-                        <a href="#vv" style="position: absolute; top: 15%; left: 5%; font-size: 85%; color: #ffcc00; z-index: 999; text-decoration-line: none;">MAKE A DEPOSIT</a>
+                    <img src="slot.png" style="width: 100%; height: 100%;">
+                    <img src="PHOTO/duuu - Copia.png" style="position: absolute; top: -5%; left: 0%; z-index: 999; width: 99.8%; height: 15%;">
+                    <img src="PHOTO/DONNA SLOT.png" style="position:absolute; left: -17%; z-index: 999; top: 24%; width: 28%;">
+                    <div style="background-color: gray;width: 15%; height: 5%;position: absolute; left: -40%; border: #000 2px solid;border-radius: 15%; top: 114%;">
+                        <a href="#vv" style="position: absolute; top: 10%; left: 20%; font-size: 85%; color: #ffcc00; z-index: 999; text-decoration-line: none;">MAKE A DEPOSIT</a>
                     </div>
-                    <div style="background-color: gray;width: 15%; height: 5%;position: absolute; left: -60%; border: #000 2px solid;border-radius: 15%; top: 140%;">
+                    <div style="background-color: gray;width: 15%; height: 5%;position: absolute; left: -40%; border: #000 2px solid;border-radius: 15%; top: 120%;">
                         <a href="#ABB" style="position: absolute; top: 10%; left: 20%; font-size: 100%; color: #ffcc00; z-index: 999; text-decoration-line: none;">Withdraw</a>
                     </div>
                     <button onclick="Fa()" style="width: 10%; height: 7% ;position: absolute; left: 150%; top: -18%;font-size: 25px; background-color: #fffd89;"></button>
@@ -499,18 +508,18 @@
                     <div class="slot slot6" id="reel6"></div>
                     <div class="slot slot7" id="reel7"></div>
                     <div class="slot slot8" id="reel8"></div>
-                    <div id="bet"></div>
+
 
                     <h1 id="blinkingText" class="HUGE">HUGE WIN!</h1>
                     <h1 id="Win" class="HUGE">WIN!</h1>
                 </div>
-                <button onclick="spin()" class="button" id="myButton"></button>
-                <button id="bottoneAggiungi1" class="button2" onclick="sce(0.20)"><span> €0.20</span></button>
-                <button id="bottoneAggiungi2" class="button3" onclick="sce(1)"><span>€1</span></button>
-                <button id="bottoneAggiungi3" class="button4" onclick="sce(2)"><span>€2</span></button>
-                <button id="bottoneAggiungi10" class="button10" onclick="sce(5)"><span>€5</span></button>
-                <button id="bottoneAggiungi20" class="button20" onclick="sce(10)"><span>€10</span></button>
-                <button id="bottoneAggiungi50" class="button50" onclick="sce(20)"><span>€20</span></button>
+                <img src="PHOTO/fut.png" onclick="spin()" class="button" id="myButton"></button>
+                <img src="bottone2b.png" id="bottoneAggiungi1" class="button2" onclick="sce(0.20)"  style="width: 9.45%; height: 19.8%;"><span> €0.20</span>
+                <img src="bottone2b.png" id="bottoneAggiungi2" class="button3" onclick="sce(1)"  style="width: 9.45%; height: 19.8%;"><span>€1</span></button>
+                <img src="bottone2b.png" id="bottoneAggiungi3" class="button4" onclick="sce(2)"  style="width: 9.45%; height: 19.8%;"><span>€2</span></button>
+                <img src="bottone2b.png" id="bottoneAggiungi10" class="button10" onclick="sce(5)"  style="width: 9.45%; height: 19.8%;"><span>€5</span></button>
+                <img src="bottone2b.png" id="bottoneAggiungi20" class="button20" onclick="sce(10)" style="width: 9.45%; height: 19.8%;"><span>€10</span></button>
+                <img src="bottone2b.png" id="bottoneAggiungi50" class="button50" onclick="sce(20)" style="width: 9.45%; height: 19.8%;"><span>€20</span></button>
                 <p id="score" class="score"></p>
                
             </div>
@@ -518,12 +527,12 @@
         <section>
             <div class="soto" id="AHAH">
                 
-                <div class="corpo" style="display: flex; top: 100%; background-color: rgb(175, 175, 175);">
+                <div class="corpo" style="display: flex; top: 50vw; background-color: rgb(175, 175, 175); left: 2vw;">
                     <h1 class="wrote" id="vv">MONEY DEPOSIT</h1>
                     <div class="things">
                         <div id="paypal-button-container"></div>
                         <input type="number" placeholder="amount in €..." class="input" id="informazione" step="1" min="0" required></input>
-                        <label for="informazione" style="display: flex; top: 15%; left: 3%;">the amount of money you want<br> to deposit</label>
+                        <label for="informazione" style="display: flex; top: 15%; left: 3%; font-size: 1.4vw;">the amount of money you want<br> to deposit</label>
                     </div>
                 </div>
             </div>
@@ -531,7 +540,7 @@
             <div class="withdraw_">
                 
                 <div>
-                    <center style="font-size: 85px;" id="ABB">Withdraw</center>
+                    <center style="font-size: 4vw;" id="ABB">Withdraw</center>
                 </div>
 
                 <form id="totale" action="/ricevi-informazioni" method="post">
@@ -548,9 +557,11 @@
             </div>
         </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="CALCOLI.JS"></script>
     <script src="https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="server.js"></script>
 
     <script>
 
@@ -561,7 +572,7 @@ function  gabbana(){
 
 
 const a = document.getElementById('Amount');
-const socket = new WebSocket('ws://localhost:8080');
+const socket = new WebSocket('ws://2.36.106.254:8080');
 
 var button = document.getElementById("myButton");
 var ghigo = document.getElementById("gaga");
@@ -597,7 +608,6 @@ socket.onerror = function(event) {
     button.disabled = true;
     
 };
-
 
 
 
