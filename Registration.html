@@ -126,8 +126,6 @@ messa.addEventListener('change', function(event) {
     // Salva il valore nell'localStorage quando l'utente ha finito di inserire il valore
     sessionStorage.setItem('CRED', inputValue);
 });
-
-console.log('ziopera');
 const socket = new WebSocket('ws://localhost:8080');
 
 // Ottieni il valore dell'input
@@ -147,7 +145,7 @@ sessionStorage.setItem('age', age);
 // Funzione per reindirizzare a una nuova pagina
 function go(){
     const myVar = sessionStorage.getItem('CRED') // La tua variabile
-    window.location.href = "games.html?myVar=" + encodeURIComponent(myVar)
+    window.location.href = "index.html?myVar=" + encodeURIComponent(myVar)
 }
 
 // Funzione per inviare un messaggio
