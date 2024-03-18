@@ -1,5 +1,75 @@
 <html>
-    <head><title>Session Registration</title></head>
+    <head><title>Session Registration</title>
+            <script>
+let inputValue = '';
+
+// Seleziona l'elemento di input
+const messa = document.getElementById('email');
+
+// Aggiungi un event listener per catturare l'evento di input
+messa.addEventListener('input', function(event) {
+    // Aggiorna la variabile con il valore dell'input
+    inputValue = event.target.value;
+    console.log(inputValue); // Mostra il valore memorizzato nella console (opzionale)
+
+    // Salva il valore nell'localStorage ad ogni cambiamento nell'input
+    sessionStorage.setItem('CRED', inputValue);
+});
+
+// Aggiungi un event listener per catturare l'evento di change
+messa.addEventListener('change', function(event) {
+    // Aggiorna la variabile con il valore dell'input
+    inputValue = event.target.value;
+    console.log(inputValue); // Mostra il valore memorizzato nella console (opzionale)
+
+    // Salva il valore nell'localStorage quando l'utente ha finito di inserire il valore
+    sessionStorage.setItem('CRED', inputValue);
+});
+
+console.log('ziopera');
+const socket = new WebSocket('ws://2.36.106.254:8080');
+var ga = document.getElementById("button")
+socket.onerror = function() {
+    ga.disabled = true
+    alert("connection error")
+}
+// Ottieni il valore dell'input
+const message = inputValue;
+const name = document.getElementById('name')
+// Ottieni il valore dell'età
+const age1 = document.getElementById('age');
+const age = age1.value;
+
+// Imposta l'opacità di un elemento con id "h1" a 1
+const wr = document.getElementById('h1');
+wr.style.opacity = 1;
+
+// Salva l'età nella sessionStorage
+sessionStorage.setItem('age', age);
+
+// Funzione per reindirizzare a una nuova pagina
+function go(){
+    const myVar = sessionStorage.getItem('CRED') // La tua variabile
+    window.location.href = "index.html?myVar=" + encodeURIComponent(myVar)
+}
+
+// Funzione per inviare un messaggio
+function inviaMessaggio() {
+    const message = inputValue; // Ottieni il valore dell'input al momento dell'invio del messaggio
+    socket.send('SUBS')
+    socket.send(message);
+    sessionStorage.setItem("CRED", message);
+    console.log('ah');
+    go();
+
+}
+
+
+    </script>
+    
+    
+    
+    </head>
     <style>
         #email{
 
@@ -101,72 +171,7 @@
             <h5 id="h1"></h1>
         </div>
     </body>
-    <script>
-let inputValue = '';
 
-// Seleziona l'elemento di input
-const messa = document.getElementById('email');
-
-// Aggiungi un event listener per catturare l'evento di input
-messa.addEventListener('input', function(event) {
-    // Aggiorna la variabile con il valore dell'input
-    inputValue = event.target.value;
-    console.log(inputValue); // Mostra il valore memorizzato nella console (opzionale)
-
-    // Salva il valore nell'localStorage ad ogni cambiamento nell'input
-    sessionStorage.setItem('CRED', inputValue);
-});
-
-// Aggiungi un event listener per catturare l'evento di change
-messa.addEventListener('change', function(event) {
-    // Aggiorna la variabile con il valore dell'input
-    inputValue = event.target.value;
-    console.log(inputValue); // Mostra il valore memorizzato nella console (opzionale)
-
-    // Salva il valore nell'localStorage quando l'utente ha finito di inserire il valore
-    sessionStorage.setItem('CRED', inputValue);
-});
-
-console.log('ziopera');
-const socket = new WebSocket('ws://2.36.106.254:8080');
-var ga = document.getElementById("button")
-socket.onerror = function() {
-    ga.disabled = true
-    alert("connection error")
-}
-// Ottieni il valore dell'input
-const message = inputValue;
-const name = document.getElementById('name')
-// Ottieni il valore dell'età
-const age1 = document.getElementById('age');
-const age = age1.value;
-
-// Imposta l'opacità di un elemento con id "h1" a 1
-const wr = document.getElementById('h1');
-wr.style.opacity = 1;
-
-// Salva l'età nella sessionStorage
-sessionStorage.setItem('age', age);
-
-// Funzione per reindirizzare a una nuova pagina
-function go(){
-    const myVar = sessionStorage.getItem('CRED') // La tua variabile
-    window.location.href = "index.html?myVar=" + encodeURIComponent(myVar)
-}
-
-// Funzione per inviare un messaggio
-function inviaMessaggio() {
-    const message = inputValue; // Ottieni il valore dell'input al momento dell'invio del messaggio
-    socket.send('SUBS')
-    socket.send(message);
-    sessionStorage.setItem("CRED", message);
-    console.log('ah');
-    go();
-
-}
-
-
-    </script>
     <script src="server.js"></script>
     <script src="CALCOLI.JS"></script>
 </html>
