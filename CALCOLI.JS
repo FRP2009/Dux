@@ -1,1 +1,551 @@
-const _0x5d2ae5=_0x5a53;(function(_0x2ee280,_0xc2629a){const _0x542c4d=_0x5a53,_0xb98c53=_0x2ee280();while(!![]){try{const _0x1aafde=-parseInt(_0x542c4d(0xa5))/0x1*(-parseInt(_0x542c4d(0xc3))/0x2)+-parseInt(_0x542c4d(0x7d))/0x3+-parseInt(_0x542c4d(0xaa))/0x4+-parseInt(_0x542c4d(0xa4))/0x5+parseInt(_0x542c4d(0x9b))/0x6*(parseInt(_0x542c4d(0x71))/0x7)+-parseInt(_0x542c4d(0xc7))/0x8*(-parseInt(_0x542c4d(0xaf))/0x9)+parseInt(_0x542c4d(0xa1))/0xa;if(_0x1aafde===_0xc2629a)break;else _0xb98c53['push'](_0xb98c53['shift']());}catch(_0x5f2049){_0xb98c53['push'](_0xb98c53['shift']());}}}(_0x4874,0x20883));let abc=0x0,cred,ZIOPERAAA=document[_0x5d2ae5(0x88)]('score'),info;function _0x5a53(_0x3ba581,_0x2f703c){const _0x4874f3=_0x4874();return _0x5a53=function(_0x5a53a5,_0x13b753){_0x5a53a5=_0x5a53a5-0x6d;let _0xfaf375=_0x4874f3[_0x5a53a5];return _0xfaf375;},_0x5a53(_0x3ba581,_0x2f703c);}var symbols=[_0x5d2ae5(0x81),_0x5d2ae5(0xb7),_0x5d2ae5(0xad),_0x5d2ae5(0x83),_0x5d2ae5(0x99)];;let amountValue;const socket=new WebSocket(_0x5d2ae5(0xb6));sssss=localStorage[_0x5d2ae5(0x90)](_0x5d2ae5(0x96)),window[_0x5d2ae5(0x72)]=function(){const _0x101533=_0x5d2ae5;sass=atob(sssss),ZIOPERAAA[_0x101533(0xab)]=sass;};const user=document[_0x5d2ae5(0x88)]('user');function ins(){const _0xe746d9=_0x5d2ae5;user[_0xe746d9(0xab)]=myVar;}var AkaG=sessionStorage[_0x5d2ae5(0x90)]('my');console[_0x5d2ae5(0x79)](AkaG);function Fa(){const _0x3bc395=_0x5d2ae5;window[_0x3bc395(0xb0)][_0x3bc395(0x9e)]=_0x3bc395(0xba)+encodeURIComponent(localStorage[_0x3bc395(0x90)]('my'));}function go_page(){const _0x63cf0a=_0x5d2ae5;window[_0x63cf0a(0xb0)][_0x63cf0a(0x9e)]=_0x63cf0a(0x86)+encodeURIComponent(sessionStorage['getItem'](_0x63cf0a(0x6e)));}function duc(){const _0x3da1f4=_0x5d2ae5;window[_0x3da1f4(0xb0)][_0x3da1f4(0x9e)]=_0x3da1f4(0x8b)+encodeURIComponent(sessionStorage[_0x3da1f4(0x90)](_0x3da1f4(0x6e)));}function vai(){const _0x3d2a5a=_0x5d2ae5;window[_0x3d2a5a(0xb0)][_0x3d2a5a(0x9e)]=_0x3d2a5a(0xb2)+encodeURIComponent(sessionStorage['getItem'](_0x3d2a5a(0x6e)));}function duce(){const _0x279ccb=_0x5d2ae5;window['location']['href']=_0x279ccb(0x8b)+encodeURIComponent(sessionStorage[_0x279ccb(0x90)]('CRED'));}function going(){const _0x3e16b4=_0x5d2ae5;window[_0x3e16b4(0xb0)]['href']='WildSpin.HTML?myVar='+encodeURIComponent(sessionStorage[_0x3e16b4(0x90)](_0x3e16b4(0x6e)));}function g(){const _0x44a139=_0x5d2ae5;window[_0x44a139(0xb0)]['href']=_0x44a139(0x7e)+encodeURIComponent(sessionStorage[_0x44a139(0x90)]('CRED'));}function abra(){const _0x3f99c6=_0x5d2ae5;window['location'][_0x3f99c6(0x9e)]=_0x3f99c6(0xc6)+encodeURIComponent(sessionStorage[_0x3f99c6(0x90)](_0x3f99c6(0x6e)));}function ab(){const _0x25798f=_0x5d2ae5;window[_0x25798f(0xb0)]['href']=_0x25798f(0xc4)+encodeURIComponent(sessionStorage[_0x25798f(0x90)](_0x25798f(0x6e)));}const aka=document[_0x5d2ae5(0x88)](_0x5d2ae5(0xb1));ZIOPERAAA[_0x5d2ae5(0xab)]=atob(localStorage['getItem'](_0x5d2ae5(0x96)))[_0x5d2ae5(0x8c)],window[_0x5d2ae5(0x72)]=function(){const _0x3db358=_0x5d2ae5;ZIOPERAAA[_0x3db358(0xab)]=atob(localStorage[_0x3db358(0x90)]('abc')),sss=localStorage[_0x3db358(0x90)](_0x3db358(0x96)),saas=atob(sss),ZIOPERAAA[_0x3db358(0xab)]=saas;},localStorage[_0x5d2ae5(0x95)]('c',abc[_0x5d2ae5(0x8c)](0x2));function sottraiDue(){const _0x5da8c4=_0x5d2ae5,_0xa42a30=decrittografa(),_0x502990=_0xa42a30-=0x2;ZIOPERAAA[_0x5da8c4(0xab)]=_0x502990,aggiornaabc(_0x502990);}localStorage[_0x5d2ae5(0x95)]('ma',abc[_0x5d2ae5(0x8c)](0x2));function getParameterByName(_0x420956,_0x356d3e){const _0x353c11=_0x5d2ae5;if(!_0x356d3e)_0x356d3e=window[_0x353c11(0xb0)]['href'];_0x420956=_0x420956[_0x353c11(0x8f)](/[\[\]]/g,'\x5c$&');var _0x49ae13=new RegExp(_0x353c11(0xc2)+_0x420956+'(=([^&#]*)|&|#|$)'),_0x2940a9=_0x49ae13['exec'](_0x356d3e);if(!_0x2940a9)return null;if(!_0x2940a9[0x2])return'';return myVar=decodeURIComponent(_0x2940a9[0x2][_0x353c11(0x8f)](/\+/g,'\x20')),myVar;}var myVar=getParameterByName(_0x5d2ae5(0x7b));function _0x4874(){const _0x41d7ed=['order','TOLTO','ws://37.183.29.168:8080','\x20🍈','#paypal-button-container','https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV','games.html?myVar=','NEW\x20DEP','Pagamento\x20completato\x20per:\x20','onopen','opacity','head','reel8','blinkingText','[?&]','16534hIvDKC','schedina.html?myVar=','AGGIUNTO\x20METà','lottery.html?myVar=','1832zMWFee','bet','reel5','Valore\x20del\x20abc\x20salvato\x20nello\x20storage\x20con\x20successo.','div','CRED','AGGIUNTO\x20TOTALE','value','9961vlfPwx','onload','add','length','appendChild','gaga','STO','Amount','log','given_name','myVar','informazione','442329TOHlKF','MoneyEarn.html?myVar=','reel4','Funzione\x20aggiungi()\x20chiamata','\x20🍊','innerHTML','\x20🍑','Buttons','insert\x20a\x20valid\x20amount','SLOT.HTML?myVar=','onerror','getElementById','\x20\x20\x20\x20','INSUFFICENT\x20MONEY','soccer.html?myVar=','toFixed','send','render','replace','getItem','Errore\x20durante\x20il\x20salvataggio\x20nel\x20localStorage:','Nuovo\x20valore\x20del\x20abc:','payer','floor','setItem','abc','myButton','reel6','\x20🍌','null','462gDNOwV','name','the\x20money\x20are\x20coming\x20to\x20your\x20PayPal!','href','Errore\x20di\x20connessione\x20al\x20server:','style','70170hhbGsP','random','then','445055svJxaG','15wwSdYS','slot-symbol','disabled','error','reel2','21244hxhplk','innerText','Il\x20valore\x20di\x20\x27info.value\x27\x20non\x20è\x20un\x20numero\x20valido.','\x20🍉','createElement','5283qTlHEI','location','aka','sport.html?myVar=','Connessione\x20stabilita!'];_0x4874=function(){return _0x41d7ed;};return _0x4874();}Quad=document['getElementById'](_0x5d2ae5(0x77)),Quad['innerText']=myVar;function aggiornaabc(_0x80e6d1){const _0xd03781=_0x5d2ae5;abc=_0x80e6d1,console[_0xd03781(0x79)](_0xd03781(0x92),abc),sex=btoa(abc);try{localStorage['setItem']('abc',sex),console[_0xd03781(0x79)](_0xd03781(0xca)),ZIOPERAAA[_0xd03781(0xab)]='€'+abc['toFixed'](0x2);}catch(_0x38b2c8){console[_0xd03781(0xa8)](_0xd03781(0x91),_0x38b2c8);}}const bet=document[_0x5d2ae5(0x88)](_0x5d2ae5(0xc8));function sce(_0x61fdf8){valoreNumerico=_0x61fdf8,bet['innerText']='€'+valoreNumerico;}function aggiungi(){const _0x138790=_0x5d2ae5,_0xff13ea=parseFloat(info[_0x138790(0x70)])*0.91;!isNaN(_0xff13ea)?(abc+=_0xff13ea,aggiornaabc(abc),console['log'](_0x138790(0x80))):console[_0x138790(0xa8)](_0x138790(0xac)),socket[_0x138790(0x8d)](valoreNumerico),socket[_0x138790(0x8d)](_0x138790(0x6f)),socket[_0x138790(0x8d)](valoreNumerico),socket[_0x138790(0x8d)](myVar),socket[_0x138790(0x8d)](_0x138790(0x89));}function aggiungimeta(){const _0x1ce6ee=_0x5d2ae5,_0x56dd66=valoreNumerico;!isNaN(_0x56dd66)?(abc+=valoreNumerico/0x2,aggiornaabc(abc),console[_0x1ce6ee(0x79)](_0x1ce6ee(0x80))):console[_0x1ce6ee(0xa8)](_0x1ce6ee(0xac)),ZIOPERAAA['innerText']='€'+abc[_0x1ce6ee(0x8c)](0x2),socket[_0x1ce6ee(0x8d)](_0x1ce6ee(0xc5)),socket[_0x1ce6ee(0x8d)](valoreNumerico),socket[_0x1ce6ee(0x8d)](myVar),socket[_0x1ce6ee(0x8d)](_0x1ce6ee(0x89));}function togli(){const _0x27a892=_0x5d2ae5,_0x49c2a1=valoreNumerico;!isNaN(_0x49c2a1)?(abc-=valoreNumerico,aggiornaabc(abc),console['log'](_0x27a892(0x80))):console[_0x27a892(0xa8)]('Il\x20valore\x20di\x20\x27info.value\x27\x20non\x20è\x20un\x20numero\x20valido.'),ZIOPERAAA[_0x27a892(0xab)]='€'+abc[_0x27a892(0x8c)](0x2),socket[_0x27a892(0x8d)](_0x27a892(0xb5)),socket[_0x27a892(0x8d)](valoreNumerico),socket[_0x27a892(0x8d)](myVar),socket[_0x27a892(0x8d)](_0x27a892(0x89));}localStorage['getItem'](_0x5d2ae5(0x96))&&(abc=parseFloat(localStorage[_0x5d2ae5(0x90)](_0x5d2ae5(0x96))));function initPayPal(){const _0x5434fe=_0x5d2ae5;var _0xbc573d=document[_0x5434fe(0xae)]('script');_0xbc573d['src']=_0x5434fe(0xb9),_0xbc573d['async']=!![],document[_0x5434fe(0xbf)]['appendChild'](_0xbc573d),_0xbc573d[_0x5434fe(0x72)]=function(){const _0x3ccb76=_0x5434fe;paypal[_0x3ccb76(0x84)]({'createOrder':function(_0x31d837,_0x3f10f1){const _0x1d2a6b=_0x3ccb76;return amountValue=info[_0x1d2a6b(0x70)],_0x3f10f1['order']['create']({'purchase_units':[{'amount':{'value':amountValue}}]});},'onApprove':function(_0x11756e,_0x2543a4){const _0x4c2d86=_0x3ccb76;return _0x2543a4[_0x4c2d86(0xb4)]['capture']()[_0x4c2d86(0xa3)](function(_0x5d49b6){const _0x58cc2c=_0x4c2d86;console[_0x58cc2c(0x79)](_0x58cc2c(0xbc)+_0x5d49b6[_0x58cc2c(0x93)][_0x58cc2c(0x9c)][_0x58cc2c(0x7a)]),aggiungi(),ZIOPERAAA[_0x58cc2c(0xab)]=sssss,socket[_0x58cc2c(0x8d)](_0x58cc2c(0xbb)),socket[_0x58cc2c(0x8d)](myVar),socket[_0x58cc2c(0x8d)](amountValue);});}})[_0x3ccb76(0x8e)](_0x3ccb76(0xb8));};}window[_0x5d2ae5(0x72)]=function(){const _0x412ce6=_0x5d2ae5;info=document['getElementById'](_0x412ce6(0x7c)),initPayPal(),ZIOPERAAA['innerText']=atob(localStorage[_0x412ce6(0x90)](_0x412ce6(0x96))),abc=atob(localStorage[_0x412ce6(0x90)](_0x412ce6(0x96)));};function add(_0x15df30){_0x15df30=valoreNumerico,abc+=_0x15df30,aggiornaabc(abc);}localStorage['getItem'](_0x5d2ae5(0x96))?abc=parseFloat(localStorage[_0x5d2ae5(0x90)](_0x5d2ae5(0x96))):(abc=0x0,aggiornaabc(abc));const blinkingTextElement=document[_0x5d2ae5(0x88)](_0x5d2ae5(0xc1));let blinkingInterval;blinkingTextElement[_0x5d2ae5(0xa0)][_0x5d2ae5(0xbe)]='0';let blinkingIntervall;WinElement[_0x5d2ae5(0xa0)][_0x5d2ae5(0xbe)]='0',window['onload']=function(){const _0xc1c00=_0x5d2ae5;WinElement[_0xc1c00(0xa0)]['opacity']='0',blinkingTextElement[_0xc1c00(0xa0)][_0xc1c00(0xbe)]='0';};function startBlinking(){blinkingInterval=setInterval(()=>{const _0x355367=_0x5a53;blinkingTextElement[_0x355367(0xa0)]['opacity']=blinkingTextElement['style'][_0x355367(0xbe)]==='0'?'1':'0';},0x1f4);}function startBlinking2(){blinkingIntervall=setInterval(()=>{const _0x29cffe=_0x5a53;WinElement[_0x29cffe(0xa0)][_0x29cffe(0xbe)]=WinElement['style']['opacity']==='0'?'1':'0';},0x1f4);}function stopBlinking(){const _0x3e7221=_0x5d2ae5;clearInterval(blinkingInterval),blinkingTextElement[_0x3e7221(0xa0)]['opacity']='0';}function stopBlinking2(){const _0x4f66e6=_0x5d2ae5;clearInterval(blinkingInterval),WinElement[_0x4f66e6(0xa0)]['opacity']='0';}function getRandomSymbol(){const _0x495843=_0x5d2ae5,_0x58128d=Math[_0x495843(0x94)](Math[_0x495843(0xa2)]()*symbols[_0x495843(0x74)]),_0x4af72e=symbols[_0x58128d],_0x421845=document[_0x495843(0xae)](_0x495843(0x6d));return _0x421845['classList'][_0x495843(0x73)](_0x495843(0xa6)),_0x421845[_0x495843(0xab)]=_0x4af72e,_0x421845;}function getRandomSymbol(){const _0x1fcf58=_0x5d2ae5,_0x586182=Math[_0x1fcf58(0x94)](Math[_0x1fcf58(0xa2)]()*symbols[_0x1fcf58(0x74)]),_0x528a97=symbols[_0x586182],_0x2e7be6=document['createElement'](_0x1fcf58(0x6d));return _0x2e7be6[_0x1fcf58(0xab)]=_0x528a97,_0x2e7be6['classList'][_0x1fcf58(0x73)]('slot-symbol'),_0x2e7be6;}ZIOPERAAA[_0x5d2ae5(0xab)]='€'+abc['toFixed'](0x2);function doppio(){const _0x2d6b73=_0x5d2ae5,_0x1eb65f=valoreNumerico;!isNaN(_0x1eb65f)?(abc+=valoreNumerico,aggiornaabc(abc),console[_0x2d6b73(0x79)](_0x2d6b73(0x80))):console[_0x2d6b73(0xa8)](_0x2d6b73(0xac)),ZIOPERAAA[_0x2d6b73(0xab)]='€'+abc[_0x2d6b73(0x8c)](0x2),socket[_0x2d6b73(0x8d)]('ADD'),socket['send'](valoreNumerico),socket[_0x2d6b73(0x8d)](myVar),socket['send']('\x20\x20\x20\x20'),startBlinking();}function spin(){const _0x1bc5ac=_0x5d2ae5;if(valoreNumerico<=abc&&valoreNumerico>0x0&&myVar!==null&&myVar!==_0x1bc5ac(0x9a)&&myVar!==''){const _0x324b57=document[_0x1bc5ac(0x88)]('reel1'),_0x3cb772=document[_0x1bc5ac(0x88)](_0x1bc5ac(0xa9)),_0x518395=document[_0x1bc5ac(0x88)]('reel3'),_0x5f09b8=document[_0x1bc5ac(0x88)](_0x1bc5ac(0x7f)),_0x3c0255=document[_0x1bc5ac(0x88)](_0x1bc5ac(0xc9)),_0x11fc58=document[_0x1bc5ac(0x88)](_0x1bc5ac(0x98)),_0x1c4ad2=document['getElementById']('reel7'),_0x2c2568=document['getElementById'](_0x1bc5ac(0xc0)),_0x3a45b7=0x37,_0x53fcb6=setInterval(()=>{const _0x267380=_0x1bc5ac;_0x324b57['innerText']=getRandomSymbol(),_0x3cb772['innerText']=getRandomSymbol(),_0x518395[_0x267380(0xab)]=getRandomSymbol(),_0x5f09b8[_0x267380(0xab)]=getRandomSymbol(),_0x3c0255['innerText']=getRandomSymbol(),_0x11fc58['innerText']=getRandomSymbol(),_0x1c4ad2['innerText']=getRandomSymbol(),_0x2c2568['innerText']=getRandomSymbol();},0x64);setTimeout(()=>{const _0x63697f=_0x1bc5ac;clearInterval(_0x53fcb6);const _0x1e1595=getRandomSymbol(),_0x205d88=getRandomSymbol(),_0x1b6540=getRandomSymbol(),_0x3f7402=getRandomSymbol(),_0x39255f=getRandomSymbol(),_0x56b614=getRandomSymbol(),_0xbf03a3=getRandomSymbol(),_0x5c8d08=getRandomSymbol();_0x324b57[_0x63697f(0x82)]='',_0x3cb772[_0x63697f(0x82)]='',_0x518395[_0x63697f(0x82)]='',_0x5f09b8[_0x63697f(0x82)]='',_0x3c0255[_0x63697f(0x82)]='',_0x11fc58[_0x63697f(0x82)]='',_0x1c4ad2[_0x63697f(0x82)]='',_0x2c2568['innerHTML']='',_0x324b57[_0x63697f(0x75)](_0x1e1595),_0x3cb772[_0x63697f(0x75)](_0x205d88),_0x518395[_0x63697f(0x75)](_0x1b6540),_0x5f09b8[_0x63697f(0x75)](_0x3f7402),_0x3c0255['appendChild'](_0x39255f),_0x11fc58['appendChild'](_0x56b614),_0x1c4ad2[_0x63697f(0x75)](_0xbf03a3),_0x2c2568[_0x63697f(0x75)](_0x5c8d08);const _0xd896be=_0x1e1595[_0x63697f(0xab)],_0x253323=_0x205d88[_0x63697f(0xab)],_0xc77846=_0x1b6540[_0x63697f(0xab)],_0x2edf9b=_0x3f7402[_0x63697f(0xab)],_0x36f729=_0x39255f[_0x63697f(0xab)],_0x37e76d=_0x56b614['innerText'],_0x35207c=_0xbf03a3[_0x63697f(0xab)],_0x147baa=_0x5c8d08[_0x63697f(0xab)];if(_0x253323===_0xc77846&&_0x37e76d===_0x35207c)aggiungimeta(),startBlinking(),aggiornaabc(abc);else _0xd896be===_0x2edf9b&&_0x36f729===_0x147baa?(doppio(),aggiornaabc(abc),startBlinking()):(togli(),aggiornaabc(abc),stopBlinking(),stopBlinking2,ZIOPERAAA[_0x63697f(0xab)]='€'+abc[_0x63697f(0x8c)](0x2));},0x64);}else{if(myVar===null|myVar===_0x1bc5ac(0x9a))window['location']['href']='Registration.html';else valoreNumerico>abc&&alert(_0x1bc5ac(0x8a));}}var amount=document[_0x5d2ae5(0x88)](_0x5d2ae5(0x78)),ae=amount[_0x5d2ae5(0x70)];function inviaMessaggio(){const _0x2bc57a=_0x5d2ae5;ae<=abc?(abc-=ae,aggiornaabc(abc),alert(_0x2bc57a(0x9d)),socket['send']('PP\x20REQUEST'),socket['send'](myVar),socket[_0x2bc57a(0x8d)](ae),socket[_0x2bc57a(0x8d)]('')):alert(_0x2bc57a(0x85));}var button=document[_0x5d2ae5(0x88)](_0x5d2ae5(0x97)),g=document[_0x5d2ae5(0x88)]('paypal-button-container'),ghigo=document[_0x5d2ae5(0x88)](_0x5d2ae5(0x76));button['disabled']=!![],g[_0x5d2ae5(0xa0)]['opacity']=0x0,ghigo[_0x5d2ae5(0xa7)]=!![],socket[_0x5d2ae5(0x87)]=function(_0x40ad43){const _0x5b4429=_0x5d2ae5;console[_0x5b4429(0xa8)](_0x5b4429(0x9f),_0x40ad43),alert('connetion\x20error');},socket[_0x5d2ae5(0xbd)]=()=>{const _0x30bd5e=_0x5d2ae5;console[_0x30bd5e(0x79)](_0x30bd5e(0xb3)),button[_0x30bd5e(0xa7)]=![],g[_0x30bd5e(0xa0)][_0x30bd5e(0xbe)]=0x1,ghigo[_0x30bd5e(0xa7)]=![];};
+let abc = 0;
+
+let cred
+let ZIOPERAAA = document.getElementById("score");
+let info;
+var symbols = [" 🍊", " 🍈", " 🍉", " 🍑", " 🍌"];;
+let amountValue;
+const socket = new WebSocket('ws://37.183.29.168:8080')
+
+sssss = localStorage.getItem("abc")
+
+window.onload = function() {
+    sass = atob(sssss)
+    ZIOPERAAA.innerText = sass
+
+}
+
+const user = document.getElementById('user')
+function ins(){
+    user.innerText = myVar
+}
+
+var AkaG = sessionStorage.getItem('my')
+
+console.log(AkaG)
+
+function Fa(){
+    window.location.href = "games.html?myVar=" +  encodeURIComponent(localStorage.getItem('my'));
+} 
+
+
+
+function go_page(){
+    window.location.href = "SLOT.HTML?myVar=" + encodeURIComponent(sessionStorage.getItem('CRED'));
+}
+
+function duc(){
+    window.location.href = "soccer.html?myVar=" + encodeURIComponent(sessionStorage.getItem('CRED'));
+}
+
+function vai(){
+    window.location.href = "sport.html?myVar=" + encodeURIComponent(sessionStorage.getItem('CRED'));
+}
+
+function duce(){
+    window.location.href = "soccer.html?myVar=" + encodeURIComponent(sessionStorage.getItem('CRED'));
+}
+
+function going(){
+    window.location.href = "WildSpin.HTML?myVar=" + encodeURIComponent(sessionStorage.getItem('CRED'));
+} 
+
+function g(){
+    window.location.href = "MoneyEarn.html?myVar=" + encodeURIComponent(sessionStorage.getItem('CRED'));
+}
+
+function abra(){
+    window.location.href = "lottery.html?myVar=" + encodeURIComponent(sessionStorage.getItem('CRED'));
+}
+
+function ab(){
+    window.location.href = "schedina.html?myVar=" + encodeURIComponent(sessionStorage.getItem('CRED'));
+}
+
+const aka = document.getElementById("aka");
+
+ZIOPERAAA.innerText = atob(localStorage.getItem("abc")).toFixed
+
+// Funzione chiamata al caricamento della pagina
+window.onload = function() {
+    // Controlla se c'è un valore crittografato salvato nel localStorage
+
+    ZIOPERAAA.innerText = atob(localStorage.getItem("abc"))
+
+    sss = localStorage.getItem('abc');
+    saas = atob(sss)
+
+    // Mostra il valore crittografato a schermo
+    ZIOPERAAA.innerText = saas
+};
+localStorage.setItem('c', abc.toFixed(2))
+// Funzione chiamata quando l'utente preme il pulsante "Sottrai 2"
+function sottraiDue() {
+    // Recupera il valore decrittografato e sottrae 2
+    const valoreDecrittografato = decrittografa();
+    const nuovoValore = valoreDecrittografato -= 2;
+
+    // Mostra il nuovo valore decrittografato a schermo
+    ZIOPERAAA.innerText = nuovoValore;
+
+    // Crittografa il nuovo valore e salvalo nel localStorage
+    aggiornaabc(nuovoValore)
+}
+
+
+
+localStorage.setItem('ma', abc.toFixed(2))
+
+
+
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    myVar = decodeURIComponent(results[2].replace(/\+/g, " "));
+    return myVar; // Modifica qu
+}
+
+var myVar = getParameterByName('myVar');
+
+Quad = document.getElementById('STO')
+
+Quad.innerText = myVar;
+
+function aggiornaabc(nuovoValore) {
+    abc = nuovoValore;
+    console.log("Nuovo valore del abc:", abc);
+    sex = btoa(abc)
+
+
+    try {
+        
+        localStorage.setItem("abc", sex)
+        console.log("Valore del abc salvato nello storage con successo.");
+        ZIOPERAAA.innerText = '€' + abc.toFixed(2)
+    } catch (error) {
+        console.error("Errore durante il salvataggio nel localStorage:", error);
+    }
+
+}
+const bet = document.getElementById('bet')
+
+function sce(valore){
+    valoreNumerico = valore
+    bet.innerText = '€' + valoreNumerico
+
+}
+function aggiungi() {
+    // Verifica se info.value è un numero valido
+    const nuovoValore = parseFloat(info.value) * 0.91;
+    
+
+    if (!isNaN(nuovoValore)) {
+        abc += nuovoValore;
+        
+
+        aggiornaabc(abc);
+        console.log("Funzione aggiungi() chiamata");
+    } else {
+        console.error("Il valore di 'info.value' non è un numero valido.");
+    }
+    
+    socket.send(valoreNumerico)
+
+    socket.send('AGGIUNTO TOTALE')
+    socket.send(valoreNumerico)
+    socket.send(myVar)
+    socket.send('    ')
+}
+
+
+function aggiungimeta(){
+    const nuovoValore = valoreNumerico;
+    
+
+    if (!isNaN(nuovoValore)) {
+        abc += valoreNumerico / 2;
+        
+
+        aggiornaabc(abc);
+        console.log("Funzione aggiungi() chiamata");
+    } else {
+        console.error("Il valore di 'info.value' non è un numero valido.");
+    }
+    
+    ZIOPERAAA.innerText = '€' + abc.toFixed(2)
+
+    socket.send('AGGIUNTO METà')
+    socket.send(valoreNumerico)
+    socket.send(myVar)
+    socket.send('    ')
+}
+
+function togli(){
+    const nuovoValore = valoreNumerico;
+    
+
+    if (!isNaN(nuovoValore)) {
+        abc -= valoreNumerico ;
+        
+
+        aggiornaabc(abc);
+        console.log("Funzione aggiungi() chiamata");
+    } else {
+        console.error("Il valore di 'info.value' non è un numero valido.");
+    }
+   
+    ZIOPERAAA.innerText = '€' + abc.toFixed(2)
+    socket.send('TOLTO')
+    socket.send(valoreNumerico)
+    socket.send(myVar)
+    socket.send('    ')
+}
+
+
+
+
+
+// Carica il valore del abc dal localStorage, se presente
+if (localStorage.getItem("abc")) {
+    abc = parseFloat(localStorage.getItem("abc"));
+}
+
+
+// Funzione per creare un ordine PayPal
+function initPayPal() {
+    // Includi l'SDK di PayPal
+    var script = document.createElement('script');
+    script.src = 'https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV';
+    script.async = true;
+    document.head.appendChild(script);
+
+    // Attendi il caricamento dell'SDK di PayPal
+    script.onload = function () {
+        // Inizializza il pulsante di pagamento
+        paypal.Buttons({
+            createOrder: function (data, actions) {
+                amountValue = info.value;
+
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: amountValue
+                        }
+                    }]
+                });
+            },
+            onApprove: function (data, actions) {
+                return actions.order.capture().then(function (details) {
+                    console.log('Pagamento completato per: ' + details.payer.name.given_name);
+                    // Chiamare la funzione aggiungi solo quando il pagamento è avvenuto con successo
+                    aggiungi();
+                    
+                    ZIOPERAAA.innerText = sssss
+                    socket.send('NEW DEP')
+                    socket.send(myVar)
+                    socket.send(amountValue)
+                });
+            }
+        }).render('#paypal-button-container'); // Renderizza il pulsante nel container con ID "paypal-button-container"
+    };
+}
+
+window.onload = function () {
+    info = document.getElementById("informazione");
+    initPayPal();  // Chiamato dopo che info è stato inizializzato
+    ZIOPERAAA.innerText = atob(localStorage.getItem("abc"))
+    
+
+    abc = atob(localStorage.getItem("abc"))
+};
+
+
+
+function add(g){
+    g = valoreNumerico;
+    abc += g;
+    aggiornaabc(abc)
+}
+
+
+
+if (localStorage.getItem("abc")) {
+    abc = parseFloat(localStorage.getItem("abc"));
+} else {
+    // Inizia una nuova sessione, eventualmente resettando altri dati se necessario
+    // localStorage.clear();  // Rimuovi questa riga o spostala dove necessario
+    abc = 0;  // Inizializza il abc a zero o al valore desiderato
+    aggiornaabc(abc);  // Aggiorna subito il abc e salvalo nello storage
+}
+
+
+
+// Funzione per creare un ordine PayPal
+// Resto del tuo codice
+const blinkingTextElement = document.getElementById("blinkingText");
+let blinkingInterval;
+
+
+
+blinkingTextElement.style.opacity = '0';
+
+let blinkingIntervall;
+WinElement.style.opacity = '0';
+
+
+window.onload = function() {
+    WinElement.style.opacity = '0';
+    blinkingTextElement.style.opacity = '0';
+}
+
+
+function startBlinking() {
+    blinkingInterval = setInterval(() => {
+        blinkingTextElement.style.opacity = (blinkingTextElement.style.opacity === '0') ? '1' : '0';
+    }, 500);
+}
+
+function startBlinking2() {
+    blinkingIntervall = setInterval(() => {
+        WinElement.style.opacity = (WinElement.style.opacity === '0') ? '1' : '0';
+    }, 500);
+}
+
+
+function stopBlinking() {
+    clearInterval(blinkingInterval);
+    blinkingTextElement.style.opacity = '0';
+}
+
+function stopBlinking2() {
+    clearInterval(blinkingInterval);
+    WinElement.style.opacity = '0';
+}
+
+
+
+function getRandomSymbol() {
+    const randomIndex = Math.floor(Math.random() * symbols.length);
+    const selectedSymbol = symbols[randomIndex];
+
+    const symbolElement = document.createElement('div');
+    symbolElement.classList.add('slot-symbol');
+    symbolElement.innerText = selectedSymbol;
+
+    return symbolElement;
+}
+
+function getRandomSymbol() {
+    const randomIndex = Math.floor(Math.random() * symbols.length);
+    const selectedSymbol = symbols[randomIndex];
+
+    const symbolElement = document.createElement('div');
+    symbolElement.innerText = selectedSymbol;
+
+    // Applica immediatamente la classe slot-symbol a tutti i simboli (casuali ed effettivi)
+    symbolElement.classList.add('slot-symbol');
+
+    return symbolElement;
+}
+
+ZIOPERAAA.innerText = '€' + abc.toFixed(2)
+
+
+
+
+
+
+
+
+
+function doppio(){
+    const nuovoValore = valoreNumerico;
+    
+
+    if (!isNaN(nuovoValore)) {
+        abc += valoreNumerico ;
+        
+
+        aggiornaabc(abc);
+        console.log("Funzione aggiungi() chiamata");
+    } else {
+        console.error("Il valore di 'info.value' non è un numero valido.");
+    }
+   
+    ZIOPERAAA.innerText = '€' + abc.toFixed(2);
+    socket.send('ADD')
+    socket.send(valoreNumerico)
+    socket.send(myVar)
+    socket.send('    ')
+    startBlinking();
+
+}
+
+function spin() {
+    // La tua logica per lo spin
+    if (valoreNumerico <= abc && valoreNumerico > 0 && myVar !== null && myVar !== 'null' && myVar !== '') {
+        const reel1 = document.getElementById("reel1");
+        const reel2 = document.getElementById("reel2");
+        const reel3 = document.getElementById("reel3");
+        const reel4 = document.getElementById("reel4");
+        const reel5 = document.getElementById("reel5");
+        const reel6 = document.getElementById("reel6");
+        const reel7 = document.getElementById("reel7");
+        const reel8 = document.getElementById("reel8");
+
+        const iterations = 55;
+
+        const spinInterval = setInterval(() => {
+
+            reel1.innerText = getRandomSymbol();
+            reel2.innerText = getRandomSymbol();
+            reel3.innerText = getRandomSymbol();
+            reel4.innerText = getRandomSymbol();
+            reel5.innerText = getRandomSymbol();
+            reel6.innerText = getRandomSymbol();
+            reel7.innerText = getRandomSymbol();
+            reel8.innerText = getRandomSymbol();
+
+        }, 100);
+
+        setTimeout(() => {
+            clearInterval(spinInterval);
+    
+            const symbol1 = getRandomSymbol();
+            const symbol2 = getRandomSymbol();
+            const symbol3 = getRandomSymbol();
+            const symbol4 = getRandomSymbol();
+            const symbol5 = getRandomSymbol();
+            const symbol6 = getRandomSymbol();
+            const symbol7 = getRandomSymbol();
+            const symbol8 = getRandomSymbol();
+    
+            reel1.innerHTML = ''; // Rimuovi il testo esistente
+            reel2.innerHTML = '';
+            reel3.innerHTML = '';
+            reel4.innerHTML = '';
+            reel5.innerHTML = '';
+            reel6.innerHTML = '';
+            reel7.innerHTML = '';
+            reel8.innerHTML = '';
+    
+            reel1.appendChild(symbol1);
+            reel2.appendChild(symbol2);
+            reel3.appendChild(symbol3);
+            reel4.appendChild(symbol4);
+            reel5.appendChild(symbol5);
+            reel6.appendChild(symbol6);
+            reel7.appendChild(symbol7);
+            reel8.appendChild(symbol8);
+
+            const symbolValue1 = symbol1.innerText;
+            const symbolValue2 = symbol2.innerText;
+            const symbolValue3 = symbol3.innerText;   
+            const symbolValue4 = symbol4.innerText;  
+            const symbolValue5 = symbol5.innerText;   
+            const symbolValue6 = symbol6.innerText;     
+            const symbolValue7 = symbol7.innerText;   
+            const symbolValue8 = symbol8.innerText;     
+    
+            
+            
+            if (symbolValue2 === symbolValue3 && symbolValue6 === symbolValue7) {
+                aggiungimeta()
+                
+                startBlinking();
+
+                aggiornaabc(abc);
+
+                
+                
+                
+
+
+
+            } else if (symbolValue1 === symbolValue4 && symbolValue5 === symbolValue8) {
+                doppio()
+                
+                aggiornaabc(abc);
+                startBlinking();
+
+
+                
+          
+                
+                
+
+            } else {
+                
+                togli()
+                aggiornaabc(abc);
+                stopBlinking();
+                stopBlinking2
+                
+                ZIOPERAAA.innerText = '€' + abc.toFixed(2)
+                
+                
+                
+                
+
+            }
+    
+            
+             // Aggiorna immediatamente il testo a schermo
+            
+            
+        }, 100); // Tempo di attesa aggiuntivo prima di applicare l'animazione al simbolo effettivo
+    } else if (myVar === null | myVar === 'null'){
+        window.location.href = ('Registration.html')
+    } else if(valoreNumerico > abc){
+        alert('INSUFFICENT MONEY')
+    }
+}
+ 
+
+
+
+var amount = document.getElementById('Amount')
+var ae = amount.value
+function inviaMessaggio() {
+    
+    
+    
+    if (ae <= abc){
+        abc -= ae;
+        aggiornaabc(abc);
+        alert('the money are coming to your PayPal!')  
+        socket.send('PP REQUEST') 
+        socket.send(myVar);
+        socket.send(ae); 
+        socket.send('')
+    }
+    else {
+        alert('insert a valid amount')
+    }           
+}
+
+var button = document.getElementById("myButton");
+var g = document.getElementById("paypal-button-container")
+var ghigo = document.getElementById("gaga")
+button.disabled = true
+g.style.opacity = 0
+ghigo.disabled = true
+
+socket.onerror = function(event) {
+    console.error('Errore di connessione al server:', event);
+    alert('connetion error')
+
+};
+
+socket.onopen = () => {
+    console.log('Connessione stabilita!');
+    button.disabled = false
+    g.style.opacity = 1
+    ghigo.disabled = false
+};
+
