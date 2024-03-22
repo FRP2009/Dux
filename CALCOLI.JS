@@ -134,7 +134,7 @@ function aggiornaabc(nuovoValore) {
 
 
     try {
-
+        
         localStorage.setItem("abc", sex)
         console.log("Valore del abc salvato nello storage con successo.");
         ZIOPERAAA.innerText = '€' + abc.toFixed(2)
@@ -153,18 +153,18 @@ function sce(valore){
 function aggiungi() {
     // Verifica se info.value è un numero valido
     const nuovoValore = parseFloat(info.value) * 0.91;
-
+    
 
     if (!isNaN(nuovoValore)) {
         abc += nuovoValore;
-
+        
 
         aggiornaabc(abc);
         console.log("Funzione aggiungi() chiamata");
     } else {
         console.error("Il valore di 'info.value' non è un numero valido.");
     }
-
+    
     socket.send(valoreNumerico)
 
     socket.send('AGGIUNTO TOTALE')
@@ -176,18 +176,18 @@ function aggiungi() {
 
 function aggiungimeta(){
     const nuovoValore = valoreNumerico;
-
+    
 
     if (!isNaN(nuovoValore)) {
         abc += valoreNumerico / 2;
-
+        
 
         aggiornaabc(abc);
         console.log("Funzione aggiungi() chiamata");
     } else {
         console.error("Il valore di 'info.value' non è un numero valido.");
     }
-
+    
     ZIOPERAAA.innerText = '€' + abc.toFixed(2)
 
     socket.send('AGGIUNTO METà')
@@ -198,18 +198,18 @@ function aggiungimeta(){
 
 function togli(){
     const nuovoValore = valoreNumerico;
-
+    
 
     if (!isNaN(nuovoValore)) {
         abc -= valoreNumerico ;
-
+        
 
         aggiornaabc(abc);
         console.log("Funzione aggiungi() chiamata");
     } else {
         console.error("Il valore di 'info.value' non è un numero valido.");
     }
-
+   
     ZIOPERAAA.innerText = '€' + abc.toFixed(2)
     socket.send('TOLTO')
     socket.send(valoreNumerico)
@@ -269,7 +269,7 @@ window.onload = function () {
     info = document.getElementById("informazione");
     initPayPal();  // Chiamato dopo che info è stato inizializzato
     ZIOPERAAA.innerText = atob(localStorage.getItem("abc"))
-
+    
 
     abc = atob(localStorage.getItem("abc"))
 };
@@ -366,18 +366,18 @@ function stopBlinking2() {
 
 function doppio(){
     const nuovoValore = valoreNumerico;
-
+    
 
     if (!isNaN(nuovoValore)) {
         abc += valoreNumerico ;
-
+        
 
         aggiornaabc(abc);
         console.log("Funzione aggiungi() chiamata");
     } else {
         console.error("Il valore di 'info.value' non è un numero valido.");
     }
-
+   
     ZIOPERAAA.innerText = '€' + abc.toFixed(2);
     socket.send('ADD')
     socket.send(valoreNumerico)
@@ -416,7 +416,7 @@ function spin() {
 
         setTimeout(() => {
             clearInterval(spinInterval);
-
+    
             const symbol1 = getRandomSymbol();
             const symbol2 = getRandomSymbol();
             const symbol3 = getRandomSymbol();
@@ -425,7 +425,7 @@ function spin() {
             const symbol6 = getRandomSymbol();
             const symbol7 = getRandomSymbol();
             const symbol8 = getRandomSymbol();
-
+    
             reel1.innerHTML = ''; // Rimuovi il testo esistente
             reel2.innerHTML = '';
             reel3.innerHTML = '';
@@ -434,7 +434,7 @@ function spin() {
             reel6.innerHTML = '';
             reel7.innerHTML = '';
             reel8.innerHTML = '';
-
+    
             reel1.appendChild(symbol1);
             reel2.appendChild(symbol2);
             reel3.appendChild(symbol3);
@@ -452,53 +452,53 @@ function spin() {
             const symbolValue6 = symbol6.innerText;     
             const symbolValue7 = symbol7.innerText;   
             const symbolValue8 = symbol8.innerText;     
-
-
-
+    
+            
+            
             if (symbolValue2 === symbolValue3 && symbolValue6 === symbolValue7) {
                 aggiungimeta()
-
+                
                 startBlinking();
 
                 aggiornaabc(abc);
 
-
-
-
+                
+                
+                
 
 
 
             } else if (symbolValue1 === symbolValue4 && symbolValue5 === symbolValue8) {
                 doppio()
-
+                
                 aggiornaabc(abc);
                 startBlinking();
 
 
-
-
-
-
+                
+          
+                
+                
 
             } else {
-
+                
                 togli()
                 aggiornaabc(abc);
                 stopBlinking();
                 stopBlinking2
-
+                
                 ZIOPERAAA.innerText = '€' + abc.toFixed(2)
-
-
-
-
+                
+                
+                
+                
 
             }
-
-
+    
+            
              // Aggiorna immediatamente il testo a schermo
-
-
+            
+            
         }, 100); // Tempo di attesa aggiuntivo prima di applicare l'animazione al simbolo effettivo
     } else if (myVar === null | myVar === 'null'){
         window.location.href = ('Registration.html')
@@ -506,16 +506,16 @@ function spin() {
         alert('INSUFFICENT MONEY')
     }
 }
-
+ 
 
 
 
 var amount = document.getElementById('Amount')
 var ae = amount.value
 function inviaMessaggio() {
-
-
-
+    
+    
+    
     if (ae <= abc){
         abc -= ae;
         aggiornaabc(abc);
