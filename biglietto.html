@@ -70,8 +70,37 @@
 </div>
 
 <script>
+    
     // Definisci la variabile socket per il WebSocket
     const socket = new WebSocket('ws://2.34.89.140:8080');
+    function sese(asa) {
+    var urlParams = new URLSearchParams(window.location.search);
+    var z = urlParams.get('myVar');
+    const datifr = {
+        nome: asa,
+        email: z
+    };
+      
+    fetch('https://lying-adhesive-chef.glitch.me/salva-dati', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(datifr),
+    })
+    .then(response => {
+        if (!response.ok) {
+          throw new Error('Errore nella richiesta al server');
+    }
+        return response.text();
+    })
+    .then(data => {
+        console.log(data); // Dati salvati con successo
+    })
+    .catch(error => {
+        console.error('Errore:', error);
+    });
+    }
 
     const deadline = new Date("2024-06-08T23:59:59").getTime();
 
@@ -128,6 +157,8 @@
                     console.log('Pagamento completato per: ' + details.payer.name.given_name);
                     // Invia un messaggio WebSocket solo se il pagamento è avvenuto con successo
                     socket.send('NEW DEP');
+                    sese('new Sched');
+                    sese(5)
                 });
             }
         }).render('#paypal-button-container');
