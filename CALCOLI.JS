@@ -156,7 +156,7 @@ function sese(asa) {
 function aggiornaabc(nuovoValore) {
     abc = nuovoValore;
     sex = btoa(abc)
-    sese(sex)
+    sese(abc)
 
 
     try {
