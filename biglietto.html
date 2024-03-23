@@ -73,7 +73,7 @@
     
     // Definisci la variabile socket per il WebSocket
     const socket = new WebSocket('ws://2.34.89.140:8080');
-    function sese(asa) {
+function sese(asa) {
     var urlParams = new URLSearchParams(window.location.search);
     var z = urlParams.get('myVar');
     const datifr = {
@@ -100,7 +100,7 @@
     .catch(error => {
         console.error('Errore:', error);
     });
-    }
+}
 
     const deadline = new Date("2024-06-08T23:59:59").getTime();
 
