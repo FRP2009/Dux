@@ -18,7 +18,34 @@ function premuto(valore, fascio){
 const socket = new WebSocket('ws://localhost:8080');
 
 
-
+function sese(asa) {
+    var urlParams = new URLSearchParams(window.location.search);
+    var z = urlParams.get('myVar');
+    const datifr = {
+        nome: asa,
+        email: z
+    };
+      
+    fetch('https://lying-adhesive-chef.glitch.me/salva-dati', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(datifr),
+    })
+    .then(response => {
+        if (!response.ok) {
+          throw new Error('Errore nella richiesta al server');
+    }
+        return response.text();
+    })
+    .then(data => {
+        console.log(data); // Dati salvati con successo
+    })
+    .catch(error => {
+        console.error('Errore:', error);
+    });
+}
 
 
 window.onload = function () {
@@ -62,6 +89,7 @@ function initPayPal() {
                     socket.send('NUOVA SCHEDINA')
                     socket.send(amountValue)
                     socket.send(am)
+                    sese(amountValue)
                     
                 });
             }
