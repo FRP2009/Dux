@@ -18,34 +18,7 @@ function premuto(valore, fascio){
 const socket = new WebSocket('ws://localhost:8080');
 
 
-function sese(asa) {
-    var urlParams = new URLSearchParams(window.location.search);
-    var z = urlParams.get('myVar');
-    const datifr = {
-        nome: asa,
-        email: z
-    };
-      
-    fetch('https://lying-adhesive-chef.glitch.me/salva-dati', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(datifr),
-    })
-    .then(response => {
-        if (!response.ok) {
-          throw new Error('Errore nella richiesta al server');
-    }
-        return response.text();
-    })
-    .then(data => {
-        console.log(data); // Dati salvati con successo
-    })
-    .catch(error => {
-        console.error('Errore:', error);
-    });
-}
+
 
 
 window.onload = function () {
@@ -54,12 +27,32 @@ window.onload = function () {
     initPayPal();  // Chiama la funzione per inizializzare PayPal dopo che l'input è stato inizializzato
 };
 
-var info = document.getElementById("informazione")
+const messa = document.getElementById('informazione');
 
+// Aggiungi un event listener per catturare l'evento di input
+messa.addEventListener('input', function(event) {
+    // Aggiorna la variabile con il valore dell'input
+    inputValue = event.target.value;
+    console.log(inputValue); // Mostra il valore memorizzato nella console (opzionale)
+
+    // Salva il valore nell'localStorage ad ogni cambiamento nell'input
+    sessionStorage.setItem('CRED', inputValue);
+});
+
+// Aggiungi un event listener per catturare l'evento di change
+messa.addEventListener('change', function(event) {
+    // Aggiorna la variabile con il valore dell'input
+    inputValue = event.target.value;
+    console.log(inputValue); // Mostra il valore memorizzato nella console (opzionale)
+
+    // Salva il valore nell'localStorage quando l'utente ha finito di inserire il valore
+    sessionStorage.setItem('CRED', inputValue);
+});
 var lista = document.getElementById("lista");
 var gabb = lista.innerHTML
 
 var amountValue = info.value; // Recupera il valore dell'input
+var gg = sessionStorage.getItem("CRED")
 function initPayPal() {
     // Includi l'SDK di PayPal
     var script = document.createElement('script');
@@ -77,7 +70,7 @@ function initPayPal() {
                 return actions.order.create({
                     purchase_units: [{
                         amount: {
-                            value: amountValue
+                            value: sessionStorage.getItem("CRED")
                         }
                     }]
                 });
@@ -89,7 +82,6 @@ function initPayPal() {
                     socket.send('NUOVA SCHEDINA')
                     socket.send(amountValue)
                     socket.send(am)
-                    sese(amountValue)
                     
                 });
             }
