@@ -21,38 +21,38 @@
         h1{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color: rgb(255, 174, 69);
-            font-size: 600%;
+            font-size: 5vw;
             position: absolute;
-            left: 40.5%;
-            top: -4%;
+            left: 32vw;
+            top: -2vw;
 
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: #000;
         }
         #da{
-            width: 37%;
-            height: 0.5%;
+            width: 30vw;
+            height: 0.25vw;
             background-color: rgb(255, 167, 85);
             position: absolute;
-            top: 8%;
+            top: 4vw;
             left: 1%;
             border-radius: 80%;
         }
         #d{
-            width: 37%;
-            height: 0.5%;
+            width: 30vw;
+            height: 0.25vw;
             background-color: rgb(255, 167, 85);
             position: absolute;
-            top: 8%;
+            top: 4vw;
             left: 61.5%;
             border-radius: 80%;
         }
         #salmo{
-            width: 17%;
-            height: 25%;
+            width: 13vw;
+            height: 12vw;
             position: absolute;
             left: 15%;
-            top: 40%;
+            top: 18vw;
             background-color: #ffd54a;
             border-radius: 10%;
             background-image: url(PHOTO/basket.png);
@@ -60,37 +60,24 @@
         }
 
         #lazza{
-            width: 17%;
-            height: 25%;
+            width: 13vw;
+            height: 12vw;
             position: absolute;
             left: 42.5%;
-            top: 40%;
+            top: 18vw;
             background-color: #ffd54a;
             border-radius: 10%;
-            background-image: url(PHOTO/boxe.png);
         }
 
         #gue{
-            width: 17%;
-            height: 25%;
+            width: 13vw;
+            height: 12vw;
             position: absolute;
             left: 70%;
-            top: 40%;
+            top: 18vw;
             background-color: #ffd54a;
             border-radius: 10%;
-            background-image: url(PHOTO/CALCIO.HTML.png);
-        }
 
-        
-        #gue:hover{
-            background-image: url(PHOTO/CALCIO.HTML2.png);
-  
-        }
-        #lazza:hover{
-            background-image: url(PHOTO/boxe2.png);
-        }
-        #salmo:hover{
-            background-image: url(PHOTO/basket2.png);
         }
 
         #gue:hover, #salmo:hover, #lazza:hover{
@@ -102,6 +89,7 @@
             
         }
 
+
     </style>
     <body>
         <div id="Corpo">
@@ -109,9 +97,9 @@
             <div id="da"></div>
             <div id="d"></div>
 
-            <button id="Gue" onclick="duce()"></button>
-            <button id="salmo" onclick="duc()"></button>
-            <button id="lazza"></button>
+            <img src="PHOTO/CALCIO.HTML.png" id="Gue" onclick="duce()"></button>
+            <img src="PHOTO/basket.png" id="salmo" onclick="duc()"></button>
+            <img src="PHOTO/boxe.png" id="lazza"></button>
         </div>
     </body>
 <script src="CALCOLI.JS"></script>
