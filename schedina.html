@@ -8,10 +8,10 @@
             background-color: rgb(172, 172, 172);
         }
         #Corpo{
-            height: 150%;
+            height: 320%;
             width: 80%;
             position: absolute;
-            left: 21.5%;
+            left: 20vw;
             background-color: rgb(126, 126, 126);
             border-radius: 0%;
             top: 0%;
@@ -21,10 +21,10 @@
         h1{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color: rgb(255, 174, 69);
-            font-size: 415%;
+            font-size: 4vw;
             position: absolute;
             left: 43.5%;
-            top: -2%;
+            top: -2.5vw;
         }
         #da{
             width: 35%;
@@ -106,8 +106,8 @@
             filter: brightness(0.8);
         }
         button{
-            width: 200px;
-            height: 75px
+            width: 8vw;
+            height: 5vw
         }
         #duce{
             position: absolute;
@@ -144,32 +144,29 @@
             top: 45%;
         }
         #paypal-button-container {
-            position: absolute ;
-            width: 340px;
-            height: 5px;
-            left: 8%;
+            position: absolute;
+            width: 100%;
+            height: 8vw;
+            left: 0%;
             top: 80%;
             z-index: 999;
-           
         }
+
     </style>
     <body>
 
         <div style="background-color: #585858; width: 22%; height: 100%; position: absolute; z-index: 999; top: 0%; left: 0%; border-right: #000 solid 2px;position: fixed;">
-
+            <input id="informazione" style="position: absolute; top: 70%; left: 32%; width: 30%; height: 3%;" placeholder="amount..." type="number">
+            <div id="paypal-button-container"></div>
             <div style="background-color: #ffd54a; height: 0.3%; width: 100%; border-radius: 40%; position: absolute; top: 1%;"></div>
             <div style="background-color: #ffd54a; height: 0.3%; width: 100%; border-radius: 40%; position: absolute; top: 99%;"></div>
             <div style="width: 85%; height: 15%; border: #000 2px solid; position: absolute; top: 8%; left: 8%; background-color: rgb(204, 204, 204);"></div>
             <div style="width: 0.5%; height: 15.3%; background-color: #000; position: absolute; top: 8%; left: 51%;"></div>
-            <h1 style="color: #000; font-size: 80%; position: absolute; top: 5%; left: 29%;">1</h1>
-            <h1 style="color: #000; font-size: 80%; position: absolute; top: 5%; left: 72%;">2</h1>
+
             <div style="position: absolute; border: #000 2px solid; width: 16%; height: 3.5%; left: 42.5%; top: 18%;">
-                <h1 style="color: #000; position: absolute; top: -133%; left: 15%; font-size: 45px;">- </h1>
-                <h1 style="color: #000; position: absolute; top: -133%; left: 65%; font-size: 45px;">- </h1>
-            </div>
+           <span style="font-size: 1.4vw;position: absolute; left: 0.5vw;">1</span> <span style="font-size: 1.4vw;position: absolute; left: 2.3vw;">2</span>  </div>
             <ul id="lista" style="font-size: 30px; position: absolute; top: 25%;"></ul>
-            <input id="informazione" style="position: absolute; top: 75%; left: 23.5%; width: 50%; height: 3%;" placeholder="amount..." type="number">
-            <div id="paypal-button-container"></div>
+
             
             
         </div>        
@@ -180,13 +177,13 @@
             <div id="da"></div>
             <div id="d"></div>
             <div class="container">
-                <div style="position: absolute; left: 10%; width: 1230px; height: 240px;background-color: rgb(196, 206, 214); top: 120px; border-radius: 5%; border: #000 2px solid">
+                <div style="position: absolute; left: 10%; width: 64vw; height: 240px;background-color: rgb(196, 206, 214); top: 120px; border-radius: 5%; border: #000 2px solid">
                     <center style="font-size: 45px; color: #7e7e7e;">1X2</center>
                     <button id="duce" onclick="premuto('|     WIN 1 |  1.21', 2)">WIN 1 <br> 1.50</button>
                     <button id="hitler" onclick="premuto(' |     X  |  1.40', 2)">X</button>
                     <button id="benito" onclick="premuto('|    WIN 2   | 1.21', 2)">WIN 2 <br> 1.21</button>     
                 </div>
-                <div style="position: absolute; left: 10%; width: 1230px; height: 240px; background-color: rgb(196, 206, 214); top: 370; border-radius: 5%;border: #000 2px solid">
+                <div style="position: absolute; left: 10%; width: 64vw; height: 240px; background-color: rgb(196, 206, 214); top: 370; border-radius: 5%;border: #000 2px solid">
                     <center style="font-size: 45px; color: #7e7e7e;">double chance</center>
                     <button id="totti" onclick="premuto('|    1X  |  1.21', 2)">1X <br> 1.50</button>
                     <button id="ronaldo" onclick="premuto('|    12  |  1.81', 2)">12</button>
@@ -195,14 +192,14 @@
 
                 
 
-                <div style="position: absolute; left: 10%; width: 1230px; height: 240px; background-color: rgb(196, 206, 214); top: 620px; border-radius: 5%; border: #000 2px solid;">
+                <div style="position: absolute; left: 10%; width: 64vw; height: 240px; background-color: rgb(196, 206, 214); top: 620px; border-radius: 5%; border: #000 2px solid;">
                     <center style="font-size: 45px; color: #7e7e7e;">Will both teams score?</center>
                     <button style="position: absolute; left: 31%; top: 45%;" onclick="premuto('|    YES   |   3.5', 2)">YES <br> 3.5</button>
                     
                     <button style="position: absolute; left: 50%; top: 45%;"  onclick="premuto('|    NO   |     2.12', 2)">NO <br> 2.12</button>    
                 </div>
 
-                <div style="position: absolute; left: 10%; width: 80%; height: 240px; background-color: rgb(196, 206, 214); top: 870px; border-radius: 5%;border: #000 2px solid">
+                <div style="position: absolute; left: 10%; width: 64vw; height: 240px; background-color: rgb(196, 206, 214); top: 870px; border-radius: 5%;border: #000 2px solid">
                     <center style="font-size: 45px; color: #7e7e7e;">pair/odd</center>
                     <button style="position: absolute; left: 31%; top: 45%;" onclick="premuto('|    PAIR   |     2.12', 2)">pair <br> 1.50</button>
                     
