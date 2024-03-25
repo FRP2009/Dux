@@ -556,11 +556,3 @@ function inviaMessaggio() {
     }           
 }
 
-var button = document.getElementById("myButton");
-var g = document.getElementById("paypal-button-container")
-var ghigo = document.getElementById("gaga")
-button.disabled = true
-g.style.opacity = 0
-ghigo.disabled = true
-
-
