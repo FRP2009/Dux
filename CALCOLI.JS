@@ -563,15 +563,4 @@ button.disabled = true
 g.style.opacity = 0
 ghigo.disabled = true
 
-socket.onerror = function(event) {
-    console.error('Errore di connessione al server:', event);
-    alert('connetion error')
 
-};
-
-socket.onopen = () => {
-    console.log('Connessione stabilita!');
-    button.disabled = false
-    g.style.opacity = 1
-    ghigo.disabled = false
-};
