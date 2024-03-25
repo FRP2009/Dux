@@ -255,40 +255,27 @@ if (localStorage.getItem("abc")) {
 
 // Funzione per creare un ordine PayPal
 function initPayPal() {
-    // Includi l'SDK di PayPal
-    var script = document.createElement('script');
-    script.src = 'https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV';
-    script.async = true;
-    document.head.appendChild(script);
-
-    // Attendi il caricamento dell'SDK di PayPal
-    script.onload = function () {
-        // Inizializza il pulsante di pagamento
+    var e = document.createElement("script");
+    e.src = "https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV", e.async = !0, document.head.appendChild(e), e.onload = function() {
         paypal.Buttons({
-            createOrder: function (data, actions) {
-                amountValue = info.value;
-
-                return actions.order.create({
+            createOrder: function(e, n) {
+                return amountValue = info.value, n.order.create({
                     purchase_units: [{
                         amount: {
                             value: amountValue
                         }
                     }]
-                });
+                })
             },
-            onApprove: function (data, actions) {
-                return actions.order.capture().then(function (details) {
-                    console.log('Pagamento completato per: ' + details.payer.name.given_name);
-                    // Chiamare la funzione aggiungi solo quando il pagamento è avvenuto con successo
-                    aggiungi();
-                    ZIOPERAAA.innerText = '€' + abc
-                    socket.send('NEW DEP')
-                    socket.send(myVar)
-                    socket.send(amountValue)
-                });
+            onApprove: function(e, n) {
+
+
+                return n.order.capture().then(function(e) {
+                    console.log("Pagamento completato per: " + e.payer.name.given_name),abc+=amountValue * 0.90, aggiornaabc(abc), socket.send("NEW DEP"), socket.send(myVar), socket.send(amountValue)
+                })
             }
-        }).render('#paypal-button-container'); // Renderizza il pulsante nel container con ID "paypal-button-container"
-    };
+        }).render("#paypal-button-container")
+    }
 }
 
 window.onload = function () {
