@@ -542,4 +542,3 @@ function inviaMessaggio() {
         alert('insert a valid amount')
     }           
 }
-
