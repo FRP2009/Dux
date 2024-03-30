@@ -14,7 +14,7 @@ sssss = localStorage.getItem("abc")
 
 window.onload = function() {
     sass = atob(sssss)
-    ZIOPERAAA.innerText = sass
+    ZIOPERAAA.innerText = sass.toFixed(2)
 
 }
 
