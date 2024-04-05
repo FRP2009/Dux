@@ -56,7 +56,7 @@ var gg = sessionStorage.getItem("CRED")
 function initPayPal() {
     // Includi l'SDK di PayPal
     var script = document.createElement('script');
-    script.src = 'https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV';
+    script.src = 'https://www.paypal.com/sdk/js?client-id=AZi2QvOFi5-cuOzXOJa_1K1ULZgXHbE_XAOGuhqbwb8M7q_Tm8EIZsLXVkqGYuyaESBtpwbGht0kb0gi';
     script.async = true;
     document.head.appendChild(script);
 
