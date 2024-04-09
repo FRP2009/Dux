@@ -1,233 +1,54 @@
-<html>
-    <head>
-        <title>GAME | KingCasinò</title>
-        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        body{
-            background-color: rgb(172, 172, 172);
-        }
-        #Corpo{
-            height: 320%;
-            width: 80%;
-            position: absolute;
-            left: 20vw;
-            background-color: rgb(126, 126, 126);
-            border-radius: 0%;
-            top: 0%;
-            border: 1.5px solid #000;
 
-        }
-        h1{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: rgb(255, 174, 69);
-            font-size: 4vw;
-            position: absolute;
-            left: 43.5%;
-            top: -2.5vw;
-        }
-        #da{
-            width: 35%;
-            height: 0.2%;
-            background-color: rgb(255, 167, 85);
-            position: absolute;
-            top: 2.5%;
-            left: 1%;
-            border-radius: 90%;
-        }
-        #d{
-            width: 35%;
-            height: 0.2%;
-            background-color: rgb(255, 167, 85);
-            position: absolute;
-            top: 2.5%;
-            left: 63.5%;
-            border-radius: 90%;
-        }
-        #salmo{
-            width: 15%;
-            height: 11%;
-            position: absolute;
-            left: 15%;
-            top: 15%;
-            background-color: #ffd54a;
-            border-radius: 10%;
-            background-image: url(fa.png);
-        }
-
-        #lazza{
-            width: 15%;
-            height: 11%;
-            position: absolute;
-            left: 42.5%;
-            top: 15%;
-            background-color: #ffd54a;
-            border-radius: 10%;
-        }
-
-        #gue{
-            width: 15%;
-            height: 11%;
-            position: absolute;
-            left: 70%;
-            top: 15%;
-            background-image: url(PHOTO/WILDga.PNG);
-            border-radius: 10%;
-        }
-
-        
-        #gue:hover{
-            background-image: url(PHOTO/WILD2ga.jpg);
-  
-        }
-
-        #salmo:hover{
-            background-image: url(fa2.png);
-        }
-
-        #gue:hover, #salmo:hover, #lazza:hover{
-            width: 14%;
-            height: 10%;
-            border: #000 solid 1px;
-            filter: brightness(0.8);
-
-            
-        }
-        #class{
-            width: 100%;
-            height: 16%;
-            overflow-x: auto; /* abilita lo scrolling orizzontale */
-            white-space: nowrap; /* impedisce il wrap degli elementi */
-            background-color: #ffd54a;
-            z-index: 999;
-            position: absolute;
-            top: 10%;
-        }
-
-        button:hover{
-            filter: brightness(0.8);
-        }
-        button{
-            width: 8vw;
-            height: 5vw
-        }
-        #duce{
-            position: absolute;
-            left: 21%;
-            top: 45%;
-        }
-        #hitler{
-            position: absolute;
-            left: 40%;
-            top: 45%;
-        }
-        #benito{
-            position: absolute;
-            left: 59%;
-            top: 45%;
-        }
-
-
-        #totti{
-            position: absolute;
-            left: 21%;
-            top: 45%;
-
-        }
-        #ronaldo{
-            position: absolute;
-            left: 40%;
-            top: 45%;
-
-        }
-        #sara_diamante{
-            position: absolute;
-            left: 59%;
-            top: 45%;
-        }
         #paypal-button-container {
+            width: 30vw;
+            height: 20vw;
             position: absolute;
-            width: 100%;
-            height: 8vw;
-            left: 0%;
-            top: 80%;
-            z-index: 999;
+            top: 70vw;
+            left: 34.5vw;
+
         }
 
     </style>
-    <body>
-
-        <div style="background-color: #585858; width: 22%; height: 100%; position: absolute; z-index: 999; top: 0%; left: 0%; border-right: #000 solid 2px;position: fixed;">
-            <input id="informazione" style="position: absolute; top: 70%; left: 32%; width: 30%; height: 3%;" placeholder="amount..." type="number">
-            <div id="paypal-button-container"></div>
-            <div style="background-color: #ffd54a; height: 0.3%; width: 100%; border-radius: 40%; position: absolute; top: 1%;"></div>
-            <div style="background-color: #ffd54a; height: 0.3%; width: 100%; border-radius: 40%; position: absolute; top: 99%;"></div>
-            <div style="width: 85%; height: 15%; border: #000 2px solid; position: absolute; top: 8%; left: 8%; background-color: rgb(204, 204, 204);"></div>
-            <div style="width: 0.5%; height: 15.3%; background-color: #000; position: absolute; top: 8%; left: 51%;"></div>
-
-            <div style="position: absolute; border: #000 2px solid; width: 16%; height: 3.5%; left: 42.5%; top: 18%;">
-           <span style="font-size: 1.4vw;position: absolute; left: 0.5vw;">1</span> <span style="font-size: 1.4vw;position: absolute; left: 2.3vw;">2</span>  </div>
-            <ul id="lista" style="font-size: 1.4vw; position: absolute; top: 25%;"></ul>
-
-            
-            
-        </div>        
-
-
-        <div id="Corpo">
-            <h1>GAME</h1>
-            <div id="da"></div>
-            <div id="d"></div>
-            <div class="container">
-                <div style="position: absolute; left: 10%; width: 64vw; height: 240px;background-color: rgb(196, 206, 214); top: 120px; border-radius: 5%; border: #000 2px solid">
-                    <center style="font-size: 45px; color: #7e7e7e;">1X2</center>
-                    <button id="duce" onclick="premuto('|     WIN 1 |  1.21', 2)">WIN 1 <br> 1.50</button>
-                    <button id="hitler" onclick="premuto(' |     X  |  1.40', 2)">X</button>
-                    <button id="benito" onclick="premuto('|    WIN 2   | 1.21', 2)">WIN 2 <br> 1.21</button>     
-                </div>
-                <div style="position: absolute; left: 10%; width: 64vw; height: 240px; background-color: rgb(196, 206, 214); top: 370; border-radius: 5%;border: #000 2px solid">
-                    <center style="font-size: 45px; color: #7e7e7e;">double chance</center>
-                    <button id="totti" onclick="premuto('|    1X  |  1.21', 2)">1X <br> 1.50</button>
-                    <button id="ronaldo" onclick="premuto('|    12  |  1.81', 2)">12</button>
-                    <button id="sara_diamante" onclick="premuto('|    2X   |  2.51', 2)">2X <br> 1.21</button>     
-                </div>
-
-                
-
-                <div style="position: absolute; left: 10%; width: 64vw; height: 240px; background-color: rgb(196, 206, 214); top: 620px; border-radius: 5%; border: #000 2px solid;">
-                    <center style="font-size: 45px; color: #7e7e7e;">Will both teams score?</center>
-                    <button style="position: absolute; left: 31%; top: 45%;" onclick="premuto('|    YES   |   3.5', 2)">YES <br> 3.5</button>
-                    
-                    <button style="position: absolute; left: 50%; top: 45%;"  onclick="premuto('|    NO   |     2.12', 2)">NO <br> 2.12</button>    
-                </div>
-
-                <div style="position: absolute; left: 10%; width: 64vw; height: 240px; background-color: rgb(196, 206, 214); top: 870px; border-radius: 5%;border: #000 2px solid">
-                    <center style="font-size: 45px; color: #7e7e7e;">pair/odd</center>
-                    <button style="position: absolute; left: 31%; top: 45%;" onclick="premuto('|    PAIR   |     2.12', 2)">pair <br> 1.50</button>
-                    
-                    <button style="position: absolute; left: 50%; top: 45%;" onclick="premuto('|    ODD   |     2.12', 2)">odd <br> 1.21</button>     
-                </div>
-            </div>
-
- 
-              
-
-            </div>
-        </div>
-    </body>
-<script>eval(atob("CmxldCBhbWlsY2FyZU11cyA9IDA7CmxldCBhbQoKZnVuY3Rpb24gcHJlbXV0byh2YWxvcmUsIGZhc2Npbyl7CiAgICB2YXIgbGlzdGEgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibGlzdGEiKTsKICAgIHZhciBudW92b0VsZW1lbnRvID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgibGkiKTsKICAgIG51b3ZvRWxlbWVudG8udGV4dENvbnRlbnQgPSB2YWxvcmU7CiAgICBhbWlsY2FyZU11cyArPSBmYXNjaW8KICAgIGNvbnNvbGUubG9nKGFtaWxjYXJlTXVzKQogICAgbGlzdGEuYXBwZW5kQ2hpbGQobnVvdm9FbGVtZW50byk7CiAgICB2YXIgY29udGVudXRvTGlzdGEgPSBsaXN0YS5pbm5lckhUTUw7CiAgICBjb25zb2xlLmxvZyhjb250ZW51dG9MaXN0YSkKICAgIGFtID0gY29udGVudXRvTGlzdGEKICAgIGNvbnNvbGUubG9nKGFtKQp9Cgpjb25zdCBzb2NrZXQgPSBuZXcgV2ViU29ja2V0KCd3czovL2xvY2FsaG9zdDo4MDgwJyk7CgoKCgoKd2luZG93Lm9ubG9hZCA9IGZ1bmN0aW9uICgpIHsKICAgIHZhciBpbmZvID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImluZm9ybWF6aW9uZSIpOyAvLyBJbml6aWFsaXp6YSBsJ2VsZW1lbnRvICJpbmZvcm1hemlvbmUiCgogICAgaW5pdFBheVBhbCgpOyAgLy8gQ2hpYW1hIGxhIGZ1bnppb25lIHBlciBpbml6aWFsaXp6YXJlIFBheVBhbCBkb3BvIGNoZSBsJ2lucHV0IMOoIHN0YXRvIGluaXppYWxpenphdG8KfTsKCmNvbnN0IG1lc3NhID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2luZm9ybWF6aW9uZScpOwoKLy8gQWdnaXVuZ2kgdW4gZXZlbnQgbGlzdGVuZXIgcGVyIGNhdHR1cmFyZSBsJ2V2ZW50byBkaSBpbnB1dAptZXNzYS5hZGRFdmVudExpc3RlbmVyKCdpbnB1dCcsIGZ1bmN0aW9uKGV2ZW50KSB7CiAgICAvLyBBZ2dpb3JuYSBsYSB2YXJpYWJpbGUgY29uIGlsIHZhbG9yZSBkZWxsJ2lucHV0CiAgICBpbnB1dFZhbHVlID0gZXZlbnQudGFyZ2V0LnZhbHVlOwogICAgY29uc29sZS5sb2coaW5wdXRWYWx1ZSk7IC8vIE1vc3RyYSBpbCB2YWxvcmUgbWVtb3JpenphdG8gbmVsbGEgY29uc29sZSAob3B6aW9uYWxlKQoKICAgIC8vIFNhbHZhIGlsIHZhbG9yZSBuZWxsJ2xvY2FsU3RvcmFnZSBhZCBvZ25pIGNhbWJpYW1lbnRvIG5lbGwnaW5wdXQKICAgIHNlc3Npb25TdG9yYWdlLnNldEl0ZW0oJ0NSRUQnLCBpbnB1dFZhbHVlKTsKfSk7CgovLyBBZ2dpdW5naSB1biBldmVudCBsaXN0ZW5lciBwZXIgY2F0dHVyYXJlIGwnZXZlbnRvIGRpIGNoYW5nZQptZXNzYS5hZGRFdmVudExpc3RlbmVyKCdjaGFuZ2UnLCBmdW5jdGlvbihldmVudCkgewogICAgLy8gQWdnaW9ybmEgbGEgdmFyaWFiaWxlIGNvbiBpbCB2YWxvcmUgZGVsbCdpbnB1dAogICAgaW5wdXRWYWx1ZSA9IGV2ZW50LnRhcmdldC52YWx1ZTsKICAgIGNvbnNvbGUubG9nKGlucHV0VmFsdWUpOyAvLyBNb3N0cmEgaWwgdmFsb3JlIG1lbW9yaXp6YXRvIG5lbGxhIGNvbnNvbGUgKG9wemlvbmFsZSkKCiAgICAvLyBTYWx2YSBpbCB2YWxvcmUgbmVsbCdsb2NhbFN0b3JhZ2UgcXVhbmRvIGwndXRlbnRlIGhhIGZpbml0byBkaSBpbnNlcmlyZSBpbCB2YWxvcmUKICAgIHNlc3Npb25TdG9yYWdlLnNldEl0ZW0oJ0NSRUQnLCBpbnB1dFZhbHVlKTsKfSk7CnZhciBsaXN0YSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJsaXN0YSIpOwp2YXIgZ2FiYiA9IGxpc3RhLmlubmVySFRNTAoKdmFyIGFtb3VudFZhbHVlID0gaW5mby52YWx1ZTsgLy8gUmVjdXBlcmEgaWwgdmFsb3JlIGRlbGwnaW5wdXQKdmFyIGdnID0gc2Vzc2lvblN0b3JhZ2UuZ2V0SXRlbSgiQ1JFRCIpCmZ1bmN0aW9uIGluaXRQYXlQYWwoKSB7CiAgICAvLyBJbmNsdWRpIGwnU0RLIGRpIFBheVBhbAogICAgdmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgc2NyaXB0LnNyYyA9ICdodHRwczovL3d3dy5wYXlwYWwuY29tL3Nkay9qcz9jbGllbnQtaWQ9QVppMlF2T0ZpNS1jdU96WE9KYV8xSzFVTFpnWEhiRV9YQU9HdWhxYndiOE03cV9UbThFSVpzTFhWa3FHWXV5YUVTQnRwd2JHaHQwa2IwZ2knOwogICAgc2NyaXB0LmFzeW5jID0gdHJ1ZTsKICAgIGRvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQoc2NyaXB0KTsKCiAgICAvLyBBdHRlbmRpIGlsIGNhcmljYW1lbnRvIGRlbGwnU0RLIGRpIFBheVBhbAogICAgc2NyaXB0Lm9ubG9hZCA9IGZ1bmN0aW9uICgpIHsKICAgICAgICAvLyBJbml6aWFsaXp6YSBpbCBwdWxzYW50ZSBkaSBwYWdhbWVudG8KICAgICAgICBwYXlwYWwuQnV0dG9ucyh7CiAgICAgICAgICAgIGNyZWF0ZU9yZGVyOiBmdW5jdGlvbiAoZGF0YSwgYWN0aW9ucykgewoKCiAgICAgICAgICAgICAgICByZXR1cm4gYWN0aW9ucy5vcmRlci5jcmVhdGUoewogICAgICAgICAgICAgICAgICAgIHB1cmNoYXNlX3VuaXRzOiBbewogICAgICAgICAgICAgICAgICAgICAgICBhbW91bnQ6IHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhbHVlOiBzZXNzaW9uU3RvcmFnZS5nZXRJdGVtKCJDUkVEIikKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH1dCiAgICAgICAgICAgICAgICB9KTsKICAgICAgICAgICAgfSwKICAgICAgICAgICAgb25BcHByb3ZlOiBmdW5jdGlvbiAoZGF0YSwgYWN0aW9ucykgewogICAgICAgICAgICAgICAgcmV0dXJuIGFjdGlvbnMub3JkZXIuY2FwdHVyZSgpLnRoZW4oZnVuY3Rpb24gKGRldGFpbHMpIHsKICAgICAgICAgICAgICAgICAgICBjb25zb2xlLmxvZygnUGFnYW1lbnRvIGNvbXBsZXRhdG8gcGVyOiAnICsgZGV0YWlscy5wYXllci5uYW1lLmdpdmVuX25hbWUpOwogICAgICAgICAgICAgICAgICAgIHNvY2tldC5zZW5kKCcnKQogICAgICAgICAgICAgICAgICAgIHNvY2tldC5zZW5kKCdOVU9WQSBTQ0hFRElOQScpCiAgICAgICAgICAgICAgICAgICAgc29ja2V0LnNlbmQoYW1vdW50VmFsdWUpCiAgICAgICAgICAgICAgICAgICAgc29ja2V0LnNlbmQoYW0pCiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB9KTsKICAgICAgICAgICAgfQogICAgICAgIH0pLnJlbmRlcignI3BheXBhbC1idXR0b24tY29udGFpbmVyJyk7IC8vIFJlbmRlcml6emEgaWwgcHVsc2FudGUgbmVsIGNvbnRhaW5lciBjb24gSUQgInBheXBhbC1idXR0b24tY29udGFpbmVyIgogICAgfTsKfQoK"))</script>
-<script src="https://www.paypal.com/sdk/js?client-id=AZi2QvOFi5-cuOzXOJa_1K1ULZgXHbE_XAOGuhqbwb8M7q_Tm8EIZsLXVkqGYuyaESBtpwbGht0kb0gi"></script>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script>
-
-var urlParams = new URLSearchParams(window.location.search);
-var myVar = urlParams.get("myVar");
-sessionStorage.setItem("myVar", myVar);
-
-</script>
+</head>
+<body style="background-color: #ff5c4c;">
+    <div id="paypal-button-container"></div>
+    <img src="bigli.png" style="width: 100vw; margin: 0vw; padding: 0vw;">
     
 
-
-
-</script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AZi2QvOFi5-cuOzXOJa_1K1ULZgXHbE_XAOGuhqbwb8M7q_Tm8EIZsLXVkqGYuyaESBtpwbGht0kb0gi"></script>
+    <script>
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '5.00', 
+                            currency_code: 'USD'
+                        },
+                        custom_id: 'ID_UNIVOCO', // L'ID personalizzato che distinguera' questo pagamento
+                        invoice_number: 'INV-123', // Numero della fattura
+                        custom_payload: { // Payload personalizzato contenente dati aggiuntivi
+                            product_id: 'BILLIONAIRE BILL' // ID del prodotto
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                console.log('Payment success for custom payload:', data.orderID);
+                alert('Payment success for custom payload: ' + data.orderID);
+            },
+            onError: function(err) {
+                console.error('Payment error:', err);
+                alert('Payment error. Please try again.');
+            }
+        }).render('#paypal-button-container');
+    </script>
+</body>
 </html>
