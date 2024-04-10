@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BILLION | KingCasinò</title>
+<title>*** | KingCasinò</title>
 <style>
     body {
         background-color: rgb(145, 145, 145);
@@ -69,74 +69,7 @@
     
 </div>
 
-<script>
-    // Definisci la variabile socket per il WebSocket
-    const socket = new WebSocket('ws://2.34.89.140:8080');
-
-    const deadline = new Date("2024-06-08T23:59:59").getTime();
-
-    // Aggiorna il countdown ogni secondo
-    const x = setInterval(function () {
-        const now = new Date().getTime();
-        const distance = deadline - now;
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("countdown").innerHTML = `
-            
-            <p>Days: ${days}</p>
-            <p>Hours: ${hours}</p>
-            <p>Minutes: ${minutes}</p>
-            <p>Seconds: ${seconds}</p>
-        `;
-
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-</script>
-
-<script src="https://www.paypal.com/sdk/js?client-id=AZ0KBQ0HU2HhzI5ONmY_7Q1ei5TRK4p2gW71qia1ob4avQv2F1XjeFWDL8vuliTnLm0OABlHtXbylYaV"></script>
-<script>
-    // Inizializza il pulsante di pagamento di PayPal
-    A = document.getElementById("ahah")
-    A.style.left = '-40%';
-    socket.onerror = function(event) {
-        console.error('Errore di connessione al server:', event);
-        alert('connetion error'); 
-        A.style.left = '25%';
-
-        
-    }
-
-    function initPayPal() {
-        paypal.Buttons({
-            createOrder: function (data, actions) {
-                return actions.order.create({
-                    purchase_units: [{
-                        amount: {
-                            value: 5
-                        }
-                    }]
-                });
-            },
-            onApprove: function (data, actions) {
-                return actions.order.capture().then(function (details) {
-                    console.log('Pagamento completato per: ' + details.payer.name.given_name);
-                    // Invia un messaggio WebSocket solo se il pagamento è avvenuto con successo
-                    socket.send('NEW DEP');
-                });
-            }
-        }).render('#paypal-button-container');
-    }
-
-    // Chiamare initPayPal() solo dopo il caricamento completo del DOM
-    document.addEventListener("DOMContentLoaded", function(event) {
-        initPayPal();
-    });
-</script>
+<script>eval(atob("ICAgIGNvbnN0IHNvY2tldCA9IG5ldyBXZWJTb2NrZXQoJ3dzOi8vMi4zNC44OS4xNDA6ODA4MCcpOwoKICAgIGNvbnN0IGRlYWRsaW5lID0gbmV3IERhdGUoIjIwMjQtMDYtMDhUMjM6NTk6NTkiKS5nZXRUaW1lKCk7CgogICAgLy8gQWdnaW9ybmEgaWwgY291bnRkb3duIG9nbmkgc2Vjb25kbwogICAgY29uc3QgeCA9IHNldEludGVydmFsKGZ1bmN0aW9uICgpIHsKICAgICAgICBjb25zdCBub3cgPSBuZXcgRGF0ZSgpLmdldFRpbWUoKTsKICAgICAgICBjb25zdCBkaXN0YW5jZSA9IGRlYWRsaW5lIC0gbm93OwogICAgICAgIGNvbnN0IGRheXMgPSBNYXRoLmZsb29yKGRpc3RhbmNlIC8gKDEwMDAgKiA2MCAqIDYwICogMjQpKTsKICAgICAgICBjb25zdCBob3VycyA9IE1hdGguZmxvb3IoKGRpc3RhbmNlICUgKDEwMDAgKiA2MCAqIDYwICogMjQpKSAvICgxMDAwICogNjAgKiA2MCkpOwogICAgICAgIGNvbnN0IG1pbnV0ZXMgPSBNYXRoLmZsb29yKChkaXN0YW5jZSAlICgxMDAwICogNjAgKiA2MCkpIC8gKDEwMDAgKiA2MCkpOwogICAgICAgIGNvbnN0IHNlY29uZHMgPSBNYXRoLmZsb29yKChkaXN0YW5jZSAlICgxMDAwICogNjApKSAvIDEwMDApOwoKICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY291bnRkb3duIikuaW5uZXJIVE1MID0gYAogICAgICAgICAgICAKICAgICAgICAgICAgPHA+RGF5czogJHtkYXlzfTwvcD4KICAgICAgICAgICAgPHA+SG91cnM6ICR7aG91cnN9PC9wPgogICAgICAgICAgICA8cD5NaW51dGVzOiAke21pbnV0ZXN9PC9wPgogICAgICAgICAgICA8cD5TZWNvbmRzOiAke3NlY29uZHN9PC9wPgogICAgICAgIGA7CgogICAgICAgIGlmIChkaXN0YW5jZSA8IDApIHsKICAgICAgICAgICAgY2xlYXJJbnRlcnZhbCh4KTsKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImNvdW50ZG93biIpLmlubmVySFRNTCA9ICJFWFBJUkVEIjsKICAgICAgICB9CiAgICB9LCAxMDAwKTsKICAgICAgICAvLyBJbml6aWFsaXp6YSBpbCBwdWxzYW50ZSBkaSBwYWdhbWVudG8gZGkgUGF5UGFsCiAgICBBID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImFoYWgiKQogICAgQS5zdHlsZS5sZWZ0ID0gJy00MCUnOwogICAgc29ja2V0Lm9uZXJyb3IgPSBmdW5jdGlvbihldmVudCkgewogICAgICAgIGNvbnNvbGUuZXJyb3IoJ0Vycm9yZSBkaSBjb25uZXNzaW9uZSBhbCBzZXJ2ZXI6JywgZXZlbnQpOwogICAgICAgIGFsZXJ0KCdjb25uZXRpb24gZXJyb3InKTsgCiAgICAgICAgQS5zdHlsZS5sZWZ0ID0gJzI1JSc7CgogICAgICAgIAogICAgfQoKICAgIGZ1bmN0aW9uIGluaXRQYXlQYWwoKSB7CiAgICAgICAgcGF5cGFsLkJ1dHRvbnMoewogICAgICAgICAgICBjcmVhdGVPcmRlcjogZnVuY3Rpb24gKGRhdGEsIGFjdGlvbnMpIHsKICAgICAgICAgICAgICAgIHJldHVybiBhY3Rpb25zLm9yZGVyLmNyZWF0ZSh7CiAgICAgICAgICAgICAgICAgICAgcHVyY2hhc2VfdW5pdHM6IFt7CiAgICAgICAgICAgICAgICAgICAgICAgIGFtb3VudDogewogICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFsdWU6IDUKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH1dCiAgICAgICAgICAgICAgICB9KTsKICAgICAgICAgICAgfSwKICAgICAgICAgICAgb25BcHByb3ZlOiBmdW5jdGlvbiAoZGF0YSwgYWN0aW9ucykgewogICAgICAgICAgICAgICAgcmV0dXJuIGFjdGlvbnMub3JkZXIuY2FwdHVyZSgpLnRoZW4oZnVuY3Rpb24gKGRldGFpbHMpIHsKICAgICAgICAgICAgICAgICAgICBjb25zb2xlLmxvZygnUGFnYW1lbnRvIGNvbXBsZXRhdG8gcGVyOiAnICsgZGV0YWlscy5wYXllci5uYW1lLmdpdmVuX25hbWUpOwogICAgICAgICAgICAgICAgICAgIC8vIEludmlhIHVuIG1lc3NhZ2dpbyBXZWJTb2NrZXQgc29sbyBzZSBpbCBwYWdhbWVudG8gw6ggYXZ2ZW51dG8gY29uIHN1Y2Nlc3NvCiAgICAgICAgICAgICAgICAgICAgc29ja2V0LnNlbmQoJ05FVyBERVAnKTsKICAgICAgICAgICAgICAgIH0pOwogICAgICAgICAgICB9CiAgICAgICAgfSkucmVuZGVyKCcjcGF5cGFsLWJ1dHRvbi1jb250YWluZXInKTsKICAgIH0KCiAgICAvLyBDaGlhbWFyZSBpbml0UGF5UGFsKCkgc29sbyBkb3BvIGlsIGNhcmljYW1lbnRvIGNvbXBsZXRvIGRlbCBET00KICAgIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoIkRPTUNvbnRlbnRMb2FkZWQiLCBmdW5jdGlvbihldmVudCkgewogICAgICAgIGluaXRQYXlQYWwoKTsKICAgIH0pOw=="))</script>
+<script src="https://www.paypal.com/sdk/js?client-id=AZi2QvOFi5-cuOzXOJa_1K1ULZgXHbE_XAOGuhqbwb8M7q_Tm8EIZsLXVkqGYuyaESBtpwbGht0kb0gi"></script>
 </body>
 </html>
