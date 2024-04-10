@@ -1,75 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>*** | KingCasinò</title>
-<style>
-    body {
-        background-color: rgb(145, 145, 145);
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    #countdown {
-        margin-left: 15%;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin-top: 10%;
-        color: rgb(255, 255, 255);
-        font-size: 2vw;
+    <style>
 
-    }
+        #paypal-button-container {
+            width: 30vw;
+            height: 20vw;
+            position: absolute;
+            top: 70vw;
+            left: 34.5vw;
 
-    .gabb{
-        margin-left: 3vw;
-        margin-top: 1.5vw;
-        width:18vw;
-        height: 21vw;
-        background-color: rgb(204, 204, 204);
+        }
 
-    }
-
-    .gabbi{
-        margin-left: 60%;
-        margin-top: -30%;
-        width:30%;
-        height: 30%;
-        background-color: rgb(204, 204, 204);
-
-    }
-
-
-    #paypal-button-container {
-            position: absolute ;
-            width: 22vw;
-            height: 6vw;
-            left: 25%;
-            top: 60%;
-           
-    }
-    
-</style>
+    </style>
 </head>
-<body>
-<div style="width: 75vw; height: 60vw; position: absolute; top: 0.5vw; left: 10vw; border: 0.1vw #000 solid; border-radius: 3%; background-color: rgb(197, 197, 197);">
-    <center style="font-size: 4vw; margin-top: 1vw;">************</center>
-    <div style="position: absolute; left: 10vw; height: 50vw; width: 55vw;border: #000 1px solid;  border-radius: 3%; background-color: rgb(173, 173, 173); " id="gabriele">
-        <div id="paypal-button-container"></div>
-        <div id="ahah" style="background-color: #d8cca700; height: 25%; width: 50%; position: absolute; top: 58%; left: -11%; z-index: 999;"></div>
-        <div class="gabb">
-            <center style="font-size: 2vw; margin-top: 2%; color: rgb(255, 202, 87); -webkit-text-stroke-color:#000; -webkit-text-stroke-width: 0.5px;" >DRAW</center>
-            <h1 id="countdown"></h1>
-            
-        </div>
-        
-        <div class="gabbi">
-            <center style="font-size: 3vw; margin-top: 2%; color: rgb(255, 202, 87); -webkit-text-stroke-color:#000; -webkit-text-stroke-width: 0.5px;" >COST</center>
-            <p style="margin-left: 5%; font-size: 1.4vw; color: #ffffff;"> 1 ticket = 5€</p>
-        </div>
-    </div>
-
+<body style="background-color: #ff5c4c;">
+    <div id="paypal-button-container"></div>
+    <img src="bigli.png" style="width: 100vw; margin: 0vw; padding: 0vw;">
     
-</div>
 
-<script>eval(atob("ICAgIGNvbnN0IHNvY2tldCA9IG5ldyBXZWJTb2NrZXQoJ3dzOi8vMi4zNC44OS4xNDA6ODA4MCcpOwoKICAgIGNvbnN0IGRlYWRsaW5lID0gbmV3IERhdGUoIjIwMjQtMDYtMDhUMjM6NTk6NTkiKS5nZXRUaW1lKCk7CgogICAgLy8gQWdnaW9ybmEgaWwgY291bnRkb3duIG9nbmkgc2Vjb25kbwogICAgY29uc3QgeCA9IHNldEludGVydmFsKGZ1bmN0aW9uICgpIHsKICAgICAgICBjb25zdCBub3cgPSBuZXcgRGF0ZSgpLmdldFRpbWUoKTsKICAgICAgICBjb25zdCBkaXN0YW5jZSA9IGRlYWRsaW5lIC0gbm93OwogICAgICAgIGNvbnN0IGRheXMgPSBNYXRoLmZsb29yKGRpc3RhbmNlIC8gKDEwMDAgKiA2MCAqIDYwICogMjQpKTsKICAgICAgICBjb25zdCBob3VycyA9IE1hdGguZmxvb3IoKGRpc3RhbmNlICUgKDEwMDAgKiA2MCAqIDYwICogMjQpKSAvICgxMDAwICogNjAgKiA2MCkpOwogICAgICAgIGNvbnN0IG1pbnV0ZXMgPSBNYXRoLmZsb29yKChkaXN0YW5jZSAlICgxMDAwICogNjAgKiA2MCkpIC8gKDEwMDAgKiA2MCkpOwogICAgICAgIGNvbnN0IHNlY29uZHMgPSBNYXRoLmZsb29yKChkaXN0YW5jZSAlICgxMDAwICogNjApKSAvIDEwMDApOwoKICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY291bnRkb3duIikuaW5uZXJIVE1MID0gYAogICAgICAgICAgICAKICAgICAgICAgICAgPHA+RGF5czogJHtkYXlzfTwvcD4KICAgICAgICAgICAgPHA+SG91cnM6ICR7aG91cnN9PC9wPgogICAgICAgICAgICA8cD5NaW51dGVzOiAke21pbnV0ZXN9PC9wPgogICAgICAgICAgICA8cD5TZWNvbmRzOiAke3NlY29uZHN9PC9wPgogICAgICAgIGA7CgogICAgICAgIGlmIChkaXN0YW5jZSA8IDApIHsKICAgICAgICAgICAgY2xlYXJJbnRlcnZhbCh4KTsKICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImNvdW50ZG93biIpLmlubmVySFRNTCA9ICJFWFBJUkVEIjsKICAgICAgICB9CiAgICB9LCAxMDAwKTsKICAgICAgICAvLyBJbml6aWFsaXp6YSBpbCBwdWxzYW50ZSBkaSBwYWdhbWVudG8gZGkgUGF5UGFsCiAgICBBID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImFoYWgiKQogICAgQS5zdHlsZS5sZWZ0ID0gJy00MCUnOwogICAgc29ja2V0Lm9uZXJyb3IgPSBmdW5jdGlvbihldmVudCkgewogICAgICAgIGNvbnNvbGUuZXJyb3IoJ0Vycm9yZSBkaSBjb25uZXNzaW9uZSBhbCBzZXJ2ZXI6JywgZXZlbnQpOwogICAgICAgIGFsZXJ0KCdjb25uZXRpb24gZXJyb3InKTsgCiAgICAgICAgQS5zdHlsZS5sZWZ0ID0gJzI1JSc7CgogICAgICAgIAogICAgfQoKICAgIGZ1bmN0aW9uIGluaXRQYXlQYWwoKSB7CiAgICAgICAgcGF5cGFsLkJ1dHRvbnMoewogICAgICAgICAgICBjcmVhdGVPcmRlcjogZnVuY3Rpb24gKGRhdGEsIGFjdGlvbnMpIHsKICAgICAgICAgICAgICAgIHJldHVybiBhY3Rpb25zLm9yZGVyLmNyZWF0ZSh7CiAgICAgICAgICAgICAgICAgICAgcHVyY2hhc2VfdW5pdHM6IFt7CiAgICAgICAgICAgICAgICAgICAgICAgIGFtb3VudDogewogICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFsdWU6IDUKICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIH1dCiAgICAgICAgICAgICAgICB9KTsKICAgICAgICAgICAgfSwKICAgICAgICAgICAgb25BcHByb3ZlOiBmdW5jdGlvbiAoZGF0YSwgYWN0aW9ucykgewogICAgICAgICAgICAgICAgcmV0dXJuIGFjdGlvbnMub3JkZXIuY2FwdHVyZSgpLnRoZW4oZnVuY3Rpb24gKGRldGFpbHMpIHsKICAgICAgICAgICAgICAgICAgICBjb25zb2xlLmxvZygnUGFnYW1lbnRvIGNvbXBsZXRhdG8gcGVyOiAnICsgZGV0YWlscy5wYXllci5uYW1lLmdpdmVuX25hbWUpOwogICAgICAgICAgICAgICAgICAgIC8vIEludmlhIHVuIG1lc3NhZ2dpbyBXZWJTb2NrZXQgc29sbyBzZSBpbCBwYWdhbWVudG8gw6ggYXZ2ZW51dG8gY29uIHN1Y2Nlc3NvCiAgICAgICAgICAgICAgICAgICAgc29ja2V0LnNlbmQoJ05FVyBERVAnKTsKICAgICAgICAgICAgICAgIH0pOwogICAgICAgICAgICB9CiAgICAgICAgfSkucmVuZGVyKCcjcGF5cGFsLWJ1dHRvbi1jb250YWluZXInKTsKICAgIH0KCiAgICAvLyBDaGlhbWFyZSBpbml0UGF5UGFsKCkgc29sbyBkb3BvIGlsIGNhcmljYW1lbnRvIGNvbXBsZXRvIGRlbCBET00KICAgIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoIkRPTUNvbnRlbnRMb2FkZWQiLCBmdW5jdGlvbihldmVudCkgewogICAgICAgIGluaXRQYXlQYWwoKTsKICAgIH0pOw=="))</script>
-<script src="https://www.paypal.com/sdk/js?client-id=AZi2QvOFi5-cuOzXOJa_1K1ULZgXHbE_XAOGuhqbwb8M7q_Tm8EIZsLXVkqGYuyaESBtpwbGht0kb0gi"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AZi2QvOFi5-cuOzXOJa_1K1ULZgXHbE_XAOGuhqbwb8M7q_Tm8EIZsLXVkqGYuyaESBtpwbGht0kb0gi"></script>
+    <script>
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '5.00', 
+                            currency_code: 'USD'
+                        },
+                        custom_id: 'ID_UNIVOCO', // L'ID personalizzato che distinguera' questo pagamento
+                        invoice_number: 'INV-123', // Numero della fattura
+                        custom_payload: { // Payload personalizzato contenente dati aggiuntivi
+                            product_id: 'BILLIONAIRE BILL' // ID del prodotto
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                console.log('Payment success for custom payload:', data.orderID);
+                alert('Payment success for custom payload: ' + data.orderID);
+            },
+            onError: function(err) {
+                console.error('Payment error:', err);
+                alert('Payment error. Please try again.');
+            }
+        }).render('#paypal-button-container');
+    </script>
 </body>
 </html>
