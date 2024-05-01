@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(sfo.png);
+                height: 300%;
+                display: flex;
+                justify-content: center;
+            }
+            .butt{
+                width: 7vw;
+                height: 7vw;
+                border-radius: 25%;
+                border: #000 solid 1px;
+                position: absolute;
+                top: -70%;
+            }
+            #paypal-button-container{}
+
+        </style>
+    </head>
+
+    <body>
+        <img src="nuova.png" style="width: 60vw; border: 0.2vw solid #000 ; height: 40vw; z-index: 801; position: absolute; top: 4vw; border-radius: 10%;">
+        <div id="container_slot" style="width: 60vw; display: flex; justify-content: center; ;height: 40vw; background-color: aliceblue; border-radius: 10%; z-index: 800; position: absolute; top: 4vw;"></div>
+        <img src="saas.png" style="position: absolute; border: #000 1.5px solid ;border-radius: 17%; z-index: 999; top: 34.5vw; width: 18vw; height: 8vw;" onclick="spin()">
+        
+        <div id="reel1" style="font-size: 10vw ;width: 15vw; height: 15vw; z-index: 999; position: absolute; top: 14vw;"></div>
+        <div id="reel2" style="font-size: 10vw ;width: 15vw; left: 26%;height: 15vw; z-index: 999; position: absolute; top: 14vw;"></div>
+        <div id="reel3" style="font-size: 10vw ;width: 15vw; left: 59%;height: 15vw; z-index: 999; position: absolute; top: 14vw;"></div>
+    
+        <div id="" style="border-radius: 8%;background-color: rgba(240, 248, 255, 0.582);width: 15vw; height: 15vw; z-index: 900; position: absolute; top: 14vw;">
+        <div id="" style="border-radius: 8%;background-color: rgba(240, 248, 255, 0.582);width: 15vw; left: -110%;height: 15vw; z-index: 900; position: absolute; top: 0vw;">
+        <div id="" style="border-radius: 8%;background-color: rgba(240, 248, 255, 0.582);width: 15vw; left: 220%;height: 15vw; z-index: 900; position: absolute; top: 0vw;">
+        
+        <img src="bottone2.png" class="Butt" style="left: -240%;" id="bottoneAggiungi1" onclick="sce(0.20)">
+        
+        <img src="bottone2.png" class="Butt" style="left: -180%;" id="bottoneAggiungi2" onclick="sce(1)">
+        <img src="bottone2.png" class="Butt" style="left: -120%;" id="bottoneAggiungi3"onclick="sce(2)">
+        <img src="bottone2.png" class="Butt" style="left: -60%;" id="bottoneAggiungi10"onclick="sce(5)">
+        <img src="bottone2.png" class="Butt" style="left: 0%;" id="bottoneAggiungi20" onclick="sce(10)">
+        <img src="bottone2.png" class="Butt" style="left: 60%;" id="bottoneAggiungi50" onclick="sce(20)">
+        <img src="saldo.png" style="position: absolute; top: 23vw; width: 15vw; height: 5vw; left: -230%; border-radius: 20%; border: #000 solid 1px;">
+        <h1 style="font-size: 1.75vw; position: absolute; top: 23.25vw; left: -225%; font-family: 'Times New Roman', Times, serif; color: rgb(77, 77, 77);" id="score"></h1>
+        <h1 style="font-size: 2.25vw; position: absolute; left: -230%; top: -65%; color: rgb(139, 124, 108);">0.20</h1>
+        <h1 style="font-size: 2.25vw; position: absolute; left: -160%; top: -65%; color: rgb(139, 124, 108);">1</h1>
+        <h1 style="font-size: 2.25vw; position: absolute; left: -101%; top: -65%; color: rgb(139, 124, 108);">5</h1>
+        <h1 style="font-size: 2.25vw; position: absolute; left: -44%; top: -65%; color: rgb(139, 124, 108);">10</h1>
+        <h1 style="font-size: 2.25vw; position: absolute; left: 15%; top: -65%; color: rgb(139, 124, 108);">10</h1>
+        <h1 style="font-size: 2.25vw; position: absolute; left: 75%; top: -65%; color: rgb(139, 124, 108);">50</h1>
+
+
+        <div style="display: flex; justify-content: center;position: absolute; left: -261.5%;width: 401%; height: 230%; background-color:rgb(175, 175, 175);; top: 270%; border-radius: 12%;border: #000 1px solid;">
+            <center style="font-size: 4VW;">MONEY DEPOSIT</center>
+            <div style="display: flex; justify-content: center;;width: 65%;height: 80%;background-color: rgb(180, 180, 180); position: absolute; top: 15%;border-radius: 20px;border: 2px solid #000;">
+                <p style="position: absolute; left: 20%; font-size: 2vw;">amount: </p>
+                <input style="width: 15vw; height: 1.5vw; position: absolute; left: 44%; top: 2.5vw;" type="number">
+                <p style="position: absolute; font-size: 1.4vw; top: 7vw;">we accept only PayPal.</p>
+                <div id="paypal-button-container"></div>
+            </div>
+
+        </div>
+
+        <div style="display: flex; justify-content: center;position: absolute; left: -261.5%;width: 401%; height: 230%; background-color:rgb(175, 175, 175);; top: 580%; border-radius: 12%;border: #000 1px solid;">
+            <center style="font-size: 4VW;">WITHDRAW</center>
+            <div style="display: flex; justify-content: center; ;width: 65%;height: 80%;background-color: rgb(180, 180, 180); position: absolute; top: 15%;border-radius: 20px;border: 2px solid #000;">
+                <p style="position: absolute; left: 20%; font-size: 2vw;">amount: </p>
+                <input style="width: 15vw; height: 1.5vw; position: absolute; left: 44%; top: 2.5vw;" type="number">
+                <p style="position: absolute; top: 7vw;">we will send you the money on PayPal.</p>
+                <button style="width: 8vw; height: 2vw; position: absolute; top: 15vw;">GET</button>
+            </div>
+
+        </div>
+
+
+
+    </body> 
+<script src="CALCOLI.JS"></script>
+<script>
+    function  gabbana(){
+    window.location.href= WildSpin.HTML + "#vv"
+}
+
+
+const a = document.getElementById('Amount');
+
+
+var button = document.getElementById("myButton");
+var ghigo = document.getElementById("gaga");
+
+var urlParams = new URLSearchParams(window.location.search);
+let inputValue = '';
+var myVar = urlParams.get('CRED');
+var amount = document.getElementById('Amount');
+var ae = amount.value;
+
+amount.addEventListener('input', function(event) {
+    inputValue = event.target.value;
+    console.log(inputValue);
+    sessionStorage.setItem('amala', inputValue);
+});
+
+function inviaMessaggio() {
+    if (ae <= abc) {
+        abc -= ae;
+        aggiornaabc(abc);
+        alert('the money are coming to your PayPal!');
+        socket.send(myVar);
+        input = localStorage.getItem('amala');
+        socket.send(inputValue); 
+    } else {
+        alert('insert a valid amount');
+    }           
+}
+</script>
+</html>
+<script>
